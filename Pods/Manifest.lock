@@ -1,0 +1,32 @@
+PODS:
+  - JRSwizzle (1.0)
+  - JSONModel (1.7.0)
+  - Reachability (3.2)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+  - SwiftyTimer (2.0.0)
+  - UIAlertController+Blocks (0.9.2)
+  - UINavigationControllerWithCompletionBlock (0.0.8):
+    - JRSwizzle (~> 1.0)
+
+DEPENDENCIES:
+  - JSONModel
+  - Reachability
+  - SDWebImage
+  - SwiftyTimer
+  - UIAlertController+Blocks
+  - UINavigationControllerWithCompletionBlock
+
+SPEC CHECKSUMS:
+  JRSwizzle: dd5ead5d913a0f29e7f558200165849f006bb1e3
+  JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  SwiftyTimer: 2efd74b060d69ad4f1496baf5bbedbe132125fcf
+  UIAlertController+Blocks: 80e28b92523fb58aba4d1bccec013d5a0b0bddb2
+  UINavigationControllerWithCompletionBlock: c043176ee769b1e108761fff73ed776645f0f9d0
+
+PODFILE CHECKSUM: ef840a5fb91497077dd74a1d282cb94b0efd0061
+
+COCOAPODS: 1.2.0
