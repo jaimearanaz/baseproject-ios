@@ -3,7 +3,7 @@
 //  DigitalRetailBuy
 //
 //  Created by Jaime Aranaz on 28/02/2017.
-//  Copyright © 2017 Corpora360. All rights reserved.
+//  Copyright © 2017 Jaime Aranaz. All rights reserved.
 //
 
 import Foundation

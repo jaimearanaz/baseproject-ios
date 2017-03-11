@@ -3,7 +3,7 @@
 //  Mystilo
 //
 //  Created by Jaime Aranaz on 20/07/16.
-//  Copyright © 2016 Corpora360. All rights reserved.
+//  Copyright © 2016 Jaime Aranaz. All rights reserved.
 //
 
 import Foundation
