@@ -35,6 +35,7 @@
 		6F515B5E1E7043DA0062B141 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F515B5D1E7043DA0062B141 /* Network.swift */; };
 		6F515B611E7056BA0062B141 /* DefaultsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F515B601E7056BA0062B141 /* DefaultsDelegate.swift */; };
 		6F515B631E7056CD0062B141 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F515B621E7056CD0062B141 /* Defaults.swift */; };
+		6F5E68481E76FAB600C3782A /* UIView_Constraints_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5E68471E76FAB600C3782A /* UIView_Constraints_Extension.swift */; };
 		6F6B03D01E716C5D0049662C /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6B03CF1E716C5D0049662C /* Cache.swift */; };
 		6F8A3B901E6F2E9C0068BA02 /* WebServicesFromLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8A3B8F1E6F2E9C0068BA02 /* WebServicesFromLocal.swift */; };
 		6F8A3B931E6F2F4C0068BA02 /* WebServicesDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8A3B921E6F2F4C0068BA02 /* WebServicesDelegate.swift */; };
@@ -107,6 +108,7 @@
 		6F515B601E7056BA0062B141 /* DefaultsDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultsDelegate.swift; sourceTree = "<group>"; };
 		6F515B621E7056CD0062B141 /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		6F515B641E705D570062B141 /* BaseProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaseProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		6F5E68471E76FAB600C3782A /* UIView_Constraints_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_Constraints_Extension.swift; sourceTree = "<group>"; };
 		6F6B03CF1E716C5D0049662C /* Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		6F8A3B8F1E6F2E9C0068BA02 /* WebServicesFromLocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServicesFromLocal.swift; sourceTree = "<group>"; };
 		6F8A3B921E6F2F4C0068BA02 /* WebServicesDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServicesDelegate.swift; sourceTree = "<group>"; };
@@ -312,6 +314,7 @@
 			isa = PBXGroup;
 			children = (
 				6F515B571E7000E20062B141 /* UIAlertController_Extension.swift */,
+				6F5E68471E76FAB600C3782A /* UIView_Constraints_Extension.swift */,
 			);
 			name = extensions;
 			sourceTree = "<group>";
@@ -661,6 +664,7 @@
 				6F515B4A1E6F162E0062B141 /* DataSource.swift in Sources */,
 				6F515B631E7056CD0062B141 /* Defaults.swift in Sources */,
 				6F515B2E1E6EC12C0062B141 /* FirstScreenPresenter.swift in Sources */,
+				6F5E68481E76FAB600C3782A /* UIView_Constraints_Extension.swift in Sources */,
 				6F8A3B901E6F2E9C0068BA02 /* WebServicesFromLocal.swift in Sources */,
 				6FF766891E6F48CC00F6468F /* SecondScreenTableListener.swift in Sources */,
 				6F515B511E6F20CA0062B141 /* PrettyLog.swift in Sources */,
@@ -841,6 +845,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 52ED6C05F0D04BE6DBCD2468 /* Pods-BaseProject.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = X7FQ3DUR48;
@@ -859,6 +864,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 67C2C356E9CDA45BD7920D64 /* Pods-BaseProject.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = X7FQ3DUR48;
