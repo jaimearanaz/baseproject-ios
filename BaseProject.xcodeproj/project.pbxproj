@@ -40,6 +40,7 @@
 		6F89452C1E783A7100C58E99 /* UIDeviceInchesExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F89452B1E783A7100C58E99 /* UIDeviceInchesExtension.swift */; };
 		6F89452E1E783F0A00C58E99 /* UIColorRGBExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F89452D1E783F0A00C58E99 /* UIColorRGBExtension.swift */; };
 		6F8945301E783F7A00C58E99 /* UIColorPaletteExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F89452F1E783F7A00C58E99 /* UIColorPaletteExtension.swift */; };
+		6F8945331E78432A00C58E99 /* VersionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F8945321E78432A00C58E99 /* VersionInfo.m */; };
 		6F8A3B901E6F2E9C0068BA02 /* WebServicesFromLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8A3B8F1E6F2E9C0068BA02 /* WebServicesFromLocal.swift */; };
 		6F8A3B931E6F2F4C0068BA02 /* WebServicesDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8A3B921E6F2F4C0068BA02 /* WebServicesDelegate.swift */; };
 		6F8A3B961E6F32840068BA02 /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F8A3B951E6F32840068BA02 /* products.json */; };
@@ -120,6 +121,8 @@
 		6F89452B1E783A7100C58E99 /* UIDeviceInchesExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDeviceInchesExtension.swift; sourceTree = "<group>"; };
 		6F89452D1E783F0A00C58E99 /* UIColorRGBExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorRGBExtension.swift; sourceTree = "<group>"; };
 		6F89452F1E783F7A00C58E99 /* UIColorPaletteExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorPaletteExtension.swift; sourceTree = "<group>"; };
+		6F8945311E78432A00C58E99 /* VersionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VersionInfo.h; sourceTree = "<group>"; };
+		6F8945321E78432A00C58E99 /* VersionInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VersionInfo.m; sourceTree = "<group>"; };
 		6F8A3B8F1E6F2E9C0068BA02 /* WebServicesFromLocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServicesFromLocal.swift; sourceTree = "<group>"; };
 		6F8A3B921E6F2F4C0068BA02 /* WebServicesDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServicesDelegate.swift; sourceTree = "<group>"; };
 		6F8A3B951E6F32840068BA02 /* products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; };
@@ -324,6 +327,8 @@
 				6F515B5D1E7043DA0062B141 /* Network.swift */,
 				6F515B5A1E702B960062B141 /* NetworkObserver.swift */,
 				6FAC05651E72D06D00A4FBB0 /* ImageDownloader.swift */,
+				6F8945311E78432A00C58E99 /* VersionInfo.h */,
+				6F8945321E78432A00C58E99 /* VersionInfo.m */,
 			);
 			name = utils;
 			sourceTree = "<group>";
@@ -691,6 +696,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F8945331E78432A00C58E99 /* VersionInfo.m in Sources */,
 				6F515B4A1E6F162E0062B141 /* DataSource.swift in Sources */,
 				6F515B631E7056CD0062B141 /* Defaults.swift in Sources */,
 				6F515B2E1E6EC12C0062B141 /* FirstScreenPresenter.swift in Sources */,
