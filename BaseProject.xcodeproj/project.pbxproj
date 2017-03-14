@@ -41,6 +41,7 @@
 		6F89452E1E783F0A00C58E99 /* UIColorRGBExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F89452D1E783F0A00C58E99 /* UIColorRGBExtension.swift */; };
 		6F8945301E783F7A00C58E99 /* UIColorPaletteExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F89452F1E783F7A00C58E99 /* UIColorPaletteExtension.swift */; };
 		6F8945331E78432A00C58E99 /* VersionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F8945321E78432A00C58E99 /* VersionInfo.m */; };
+		6F8945391E7849E500C58E99 /* iOSVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8945381E7849E500C58E99 /* iOSVersion.swift */; };
 		6F8A3B901E6F2E9C0068BA02 /* WebServicesFromLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8A3B8F1E6F2E9C0068BA02 /* WebServicesFromLocal.swift */; };
 		6F8A3B931E6F2F4C0068BA02 /* WebServicesDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8A3B921E6F2F4C0068BA02 /* WebServicesDelegate.swift */; };
 		6F8A3B961E6F32840068BA02 /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F8A3B951E6F32840068BA02 /* products.json */; };
@@ -123,6 +124,7 @@
 		6F89452F1E783F7A00C58E99 /* UIColorPaletteExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorPaletteExtension.swift; sourceTree = "<group>"; };
 		6F8945311E78432A00C58E99 /* VersionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VersionInfo.h; sourceTree = "<group>"; };
 		6F8945321E78432A00C58E99 /* VersionInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VersionInfo.m; sourceTree = "<group>"; };
+		6F8945381E7849E500C58E99 /* iOSVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOSVersion.swift; sourceTree = "<group>"; };
 		6F8A3B8F1E6F2E9C0068BA02 /* WebServicesFromLocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServicesFromLocal.swift; sourceTree = "<group>"; };
 		6F8A3B921E6F2F4C0068BA02 /* WebServicesDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServicesDelegate.swift; sourceTree = "<group>"; };
 		6F8A3B951E6F32840068BA02 /* products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; };
@@ -329,6 +331,7 @@
 				6FAC05651E72D06D00A4FBB0 /* ImageDownloader.swift */,
 				6F8945311E78432A00C58E99 /* VersionInfo.h */,
 				6F8945321E78432A00C58E99 /* VersionInfo.m */,
+				6F8945381E7849E500C58E99 /* iOSVersion.swift */,
 			);
 			name = utils;
 			sourceTree = "<group>";
@@ -718,6 +721,7 @@
 				6F515B461E6F13F20062B141 /* Product.swift in Sources */,
 				6FAC05661E72D06D00A4FBB0 /* ImageDownloader.swift in Sources */,
 				6F515B551E6F219B0062B141 /* WebServicesLogger.swift in Sources */,
+				6F8945391E7849E500C58E99 /* iOSVersion.swift in Sources */,
 				6F89452C1E783A7100C58E99 /* UIDeviceInchesExtension.swift in Sources */,
 				6F95916E1E782D3900BC9CCE /* CustomViewDelegate.swift in Sources */,
 				6F6B03D01E716C5D0049662C /* Cache.swift in Sources */,
