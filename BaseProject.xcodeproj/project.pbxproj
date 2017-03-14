@@ -30,17 +30,21 @@
 		6F515B4E1E6F19F10062B141 /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F515B4D1E6F19F10062B141 /* WebServices.swift */; };
 		6F515B511E6F20CA0062B141 /* PrettyLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F515B501E6F20CA0062B141 /* PrettyLog.swift */; };
 		6F515B551E6F219B0062B141 /* WebServicesLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F515B541E6F219B0062B141 /* WebServicesLogger.swift */; };
-		6F515B581E7000E20062B141 /* UIAlertController_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F515B571E7000E20062B141 /* UIAlertController_Extension.swift */; };
+		6F515B581E7000E20062B141 /* UIAlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F515B571E7000E20062B141 /* UIAlertControllerExtension.swift */; };
 		6F515B5C1E702B960062B141 /* NetworkObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F515B5A1E702B960062B141 /* NetworkObserver.swift */; };
 		6F515B5E1E7043DA0062B141 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F515B5D1E7043DA0062B141 /* Network.swift */; };
 		6F515B611E7056BA0062B141 /* DefaultsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F515B601E7056BA0062B141 /* DefaultsDelegate.swift */; };
 		6F515B631E7056CD0062B141 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F515B621E7056CD0062B141 /* Defaults.swift */; };
-		6F5E68481E76FAB600C3782A /* UIView_Constraints_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5E68471E76FAB600C3782A /* UIView_Constraints_Extension.swift */; };
+		6F5E68481E76FAB600C3782A /* UIViewConstraintsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5E68471E76FAB600C3782A /* UIViewConstraintsExtension.swift */; };
 		6F6B03D01E716C5D0049662C /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6B03CF1E716C5D0049662C /* Cache.swift */; };
 		6F8A3B901E6F2E9C0068BA02 /* WebServicesFromLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8A3B8F1E6F2E9C0068BA02 /* WebServicesFromLocal.swift */; };
 		6F8A3B931E6F2F4C0068BA02 /* WebServicesDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8A3B921E6F2F4C0068BA02 /* WebServicesDelegate.swift */; };
 		6F8A3B961E6F32840068BA02 /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F8A3B951E6F32840068BA02 /* products.json */; };
 		6F8A3B991E6F34FF0068BA02 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6F8A3B9B1E6F34FF0068BA02 /* Localizable.strings */; };
+		6F9591681E7811C800BC9CCE /* UIViewLoadableFromNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9591671E7811C800BC9CCE /* UIViewLoadableFromNib.swift */; };
+		6F95916A1E782C3400BC9CCE /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9591691E782C3400BC9CCE /* CustomView.swift */; };
+		6F95916C1E782C5B00BC9CCE /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F95916B1E782C5B00BC9CCE /* CustomView.xib */; };
+		6F95916E1E782D3900BC9CCE /* CustomViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F95916D1E782D3900BC9CCE /* CustomViewDelegate.swift */; };
 		6FAC05641E72CE6700A4FBB0 /* SecondScreenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAC05631E72CE6700A4FBB0 /* SecondScreenTableViewCell.swift */; };
 		6FAC05661E72D06D00A4FBB0 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAC05651E72D06D00A4FBB0 /* ImageDownloader.swift */; };
 		6FF766851E6F47DF00F6468F /* SecondScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FF766841E6F47DF00F6468F /* SecondScreenViewController.xib */; };
@@ -102,18 +106,22 @@
 		6F515B4D1E6F19F10062B141 /* WebServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
 		6F515B501E6F20CA0062B141 /* PrettyLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrettyLog.swift; sourceTree = "<group>"; };
 		6F515B541E6F219B0062B141 /* WebServicesLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServicesLogger.swift; sourceTree = "<group>"; };
-		6F515B571E7000E20062B141 /* UIAlertController_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertController_Extension.swift; sourceTree = "<group>"; };
+		6F515B571E7000E20062B141 /* UIAlertControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtension.swift; sourceTree = "<group>"; };
 		6F515B5A1E702B960062B141 /* NetworkObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkObserver.swift; sourceTree = "<group>"; };
 		6F515B5D1E7043DA0062B141 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		6F515B601E7056BA0062B141 /* DefaultsDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultsDelegate.swift; sourceTree = "<group>"; };
 		6F515B621E7056CD0062B141 /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		6F515B641E705D570062B141 /* BaseProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaseProject-Bridging-Header.h"; sourceTree = "<group>"; };
-		6F5E68471E76FAB600C3782A /* UIView_Constraints_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_Constraints_Extension.swift; sourceTree = "<group>"; };
+		6F5E68471E76FAB600C3782A /* UIViewConstraintsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewConstraintsExtension.swift; sourceTree = "<group>"; };
 		6F6B03CF1E716C5D0049662C /* Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		6F8A3B8F1E6F2E9C0068BA02 /* WebServicesFromLocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServicesFromLocal.swift; sourceTree = "<group>"; };
 		6F8A3B921E6F2F4C0068BA02 /* WebServicesDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServicesDelegate.swift; sourceTree = "<group>"; };
 		6F8A3B951E6F32840068BA02 /* products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; };
 		6F8A3B9A1E6F34FF0068BA02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6F9591671E7811C800BC9CCE /* UIViewLoadableFromNib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewLoadableFromNib.swift; sourceTree = "<group>"; };
+		6F9591691E782C3400BC9CCE /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		6F95916B1E782C5B00BC9CCE /* CustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
+		6F95916D1E782D3900BC9CCE /* CustomViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewDelegate.swift; sourceTree = "<group>"; };
 		6FAC05631E72CE6700A4FBB0 /* SecondScreenTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondScreenTableViewCell.swift; sourceTree = "<group>"; };
 		6FAC05651E72D06D00A4FBB0 /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		6FF766841E6F47DF00F6468F /* SecondScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondScreenViewController.xib; sourceTree = "<group>"; };
@@ -254,6 +262,9 @@
 		6F515B2A1E6EC0FD0062B141 /* first screen */ = {
 			isa = PBXGroup;
 			children = (
+				6F95916B1E782C5B00BC9CCE /* CustomView.xib */,
+				6F9591691E782C3400BC9CCE /* CustomView.swift */,
+				6F95916D1E782D3900BC9CCE /* CustomViewDelegate.swift */,
 				6F515B331E6EC1700062B141 /* FirstScreenViewController.xib */,
 				6F515B2B1E6EC1170062B141 /* FirstScreenViewController.swift */,
 				6F515B311E6EC14D0062B141 /* FirstScreenViewControllerDelegate.swift */,
@@ -306,6 +317,7 @@
 				6F515B5D1E7043DA0062B141 /* Network.swift */,
 				6F515B5A1E702B960062B141 /* NetworkObserver.swift */,
 				6FAC05651E72D06D00A4FBB0 /* ImageDownloader.swift */,
+				6F9591671E7811C800BC9CCE /* UIViewLoadableFromNib.swift */,
 			);
 			name = utils;
 			sourceTree = "<group>";
@@ -313,8 +325,8 @@
 		6F515B561E6FFDA80062B141 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
-				6F515B571E7000E20062B141 /* UIAlertController_Extension.swift */,
-				6F5E68471E76FAB600C3782A /* UIView_Constraints_Extension.swift */,
+				6F515B571E7000E20062B141 /* UIAlertControllerExtension.swift */,
+				6F5E68471E76FAB600C3782A /* UIViewConstraintsExtension.swift */,
 			);
 			name = extensions;
 			sourceTree = "<group>";
@@ -497,6 +509,7 @@
 				6F515AFF1E6EC0130062B141 /* LaunchScreen.storyboard in Resources */,
 				6FF766851E6F47DF00F6468F /* SecondScreenViewController.xib in Resources */,
 				6F515B341E6EC1700062B141 /* FirstScreenViewController.xib in Resources */,
+				6F95916C1E782C5B00BC9CCE /* CustomView.xib in Resources */,
 				6FF7668D1E6F4C0300F6468F /* SecondScreenTableViewCell.xib in Resources */,
 				6F515AFC1E6EC0130062B141 /* Assets.xcassets in Resources */,
 			);
@@ -664,7 +677,7 @@
 				6F515B4A1E6F162E0062B141 /* DataSource.swift in Sources */,
 				6F515B631E7056CD0062B141 /* Defaults.swift in Sources */,
 				6F515B2E1E6EC12C0062B141 /* FirstScreenPresenter.swift in Sources */,
-				6F5E68481E76FAB600C3782A /* UIView_Constraints_Extension.swift in Sources */,
+				6F5E68481E76FAB600C3782A /* UIViewConstraintsExtension.swift in Sources */,
 				6F8A3B901E6F2E9C0068BA02 /* WebServicesFromLocal.swift in Sources */,
 				6FF766891E6F48CC00F6468F /* SecondScreenTableListener.swift in Sources */,
 				6F515B511E6F20CA0062B141 /* PrettyLog.swift in Sources */,
@@ -676,10 +689,12 @@
 				6F515B3E1E6F0CFF0062B141 /* SecondScreenPresenter.swift in Sources */,
 				6F515B301E6EC13F0062B141 /* FirstScreenPresenterDelegate.swift in Sources */,
 				6F515B5C1E702B960062B141 /* NetworkObserver.swift in Sources */,
+				6F9591681E7811C800BC9CCE /* UIViewLoadableFromNib.swift in Sources */,
 				6F515B5E1E7043DA0062B141 /* Network.swift in Sources */,
 				6F515B461E6F13F20062B141 /* Product.swift in Sources */,
 				6FAC05661E72D06D00A4FBB0 /* ImageDownloader.swift in Sources */,
 				6F515B551E6F219B0062B141 /* WebServicesLogger.swift in Sources */,
+				6F95916E1E782D3900BC9CCE /* CustomViewDelegate.swift in Sources */,
 				6F6B03D01E716C5D0049662C /* Cache.swift in Sources */,
 				6F8A3B931E6F2F4C0068BA02 /* WebServicesDelegate.swift in Sources */,
 				6F515B321E6EC14D0062B141 /* FirstScreenViewControllerDelegate.swift in Sources */,
@@ -690,7 +705,8 @@
 				6F515B4C1E6F172F0062B141 /* RouterDelegate.swift in Sources */,
 				6F515B291E6EC0C00062B141 /* PresenterInstances.swift in Sources */,
 				6F515B4E1E6F19F10062B141 /* WebServices.swift in Sources */,
-				6F515B581E7000E20062B141 /* UIAlertController_Extension.swift in Sources */,
+				6F515B581E7000E20062B141 /* UIAlertControllerExtension.swift in Sources */,
+				6F95916A1E782C3400BC9CCE /* CustomView.swift in Sources */,
 				6F515B2C1E6EC1170062B141 /* FirstScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -21,9 +21,7 @@ class SecondScreenTableViewCell: UITableViewCell {
     
     func setupCell(withProduct product: Product) {
         
-        productImage.sd_setImage(with: URL(string: product.image)) { (image, error, cache, url) in
-            print("cache \(cache.rawValue)")
-        }
+        productImage.sd_setImage(with: URL(string: product.image))
         
         name.text = product.name
         brand.text = product.brand

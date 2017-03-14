@@ -9,9 +9,21 @@
 import Foundation
 import UIKit
 
-class FirstScreenViewController: UIViewController, FirstScreenViewControllerDelegate {
+class FirstScreenViewController: UIViewController, FirstScreenViewControllerDelegate, CustomViewDelegate {
+    
+    @IBOutlet var customView: CustomView!
+    @IBOutlet var activityIndicator: UIActivityIndicatorView!
     
     fileprivate var presenterDelegate: FirstScreenPresenterDelegate?
+    
+    // MARK: - Lifecycle methods
+    
+    override func viewDidLoad() {
+        
+        super.viewDidLoad()
+        
+        customView.delegate = self
+    }
     
     // MARK: - Public methods
     
@@ -19,11 +31,11 @@ class FirstScreenViewController: UIViewController, FirstScreenViewControllerDele
         
         self.presenterDelegate = presenterDelegate
     }
-
-    // MARK: - Action methods
     
-    @IBAction func didSelectGo() {
+    // MARK: - CustomViewDelegate methods
     
+    func didSelectGetData() {
+        
         presenterDelegate?.didSelectGo()
     }
     
@@ -31,12 +43,16 @@ class FirstScreenViewController: UIViewController, FirstScreenViewControllerDele
     
     func startLoadingState() {
         
-        // TODO: implement
+        customView.isHidden = true
+        activityIndicator.isHidden = false
+        activityIndicator.startAnimating()
     }
     
     func stopLoadingState() {
         
-        // TODO: implement
+        customView.isHidden = false
+        activityIndicator.stopAnimating()
+        activityIndicator.isHidden = true
     }
     
     func showMessage(_ message: String) {
