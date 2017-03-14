@@ -312,12 +312,12 @@
 		6F515B4F1E6F20820062B141 /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				6F95916F1E7833FC00BC9CCE /* subclasses */,
 				6F515B561E6FFDA80062B141 /* extensions */,
 				6F515B501E6F20CA0062B141 /* PrettyLog.swift */,
 				6F515B5D1E7043DA0062B141 /* Network.swift */,
 				6F515B5A1E702B960062B141 /* NetworkObserver.swift */,
 				6FAC05651E72D06D00A4FBB0 /* ImageDownloader.swift */,
-				6F9591671E7811C800BC9CCE /* UIViewLoadableFromNib.swift */,
 			);
 			name = utils;
 			sourceTree = "<group>";
@@ -359,6 +359,14 @@
 				6F8A3B951E6F32840068BA02 /* products.json */,
 			);
 			name = json;
+			sourceTree = "<group>";
+		};
+		6F95916F1E7833FC00BC9CCE /* subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				6F9591671E7811C800BC9CCE /* UIViewLoadableFromNib.swift */,
+			);
+			name = subclasses;
 			sourceTree = "<group>";
 		};
 		8727EF43D6D890B93F523DFD /* Pods */ = {
