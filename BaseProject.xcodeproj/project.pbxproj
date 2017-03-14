@@ -37,6 +37,7 @@
 		6F515B631E7056CD0062B141 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F515B621E7056CD0062B141 /* Defaults.swift */; };
 		6F5E68481E76FAB600C3782A /* UIViewConstraintsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5E68471E76FAB600C3782A /* UIViewConstraintsExtension.swift */; };
 		6F6B03D01E716C5D0049662C /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6B03CF1E716C5D0049662C /* Cache.swift */; };
+		6F89452C1E783A7100C58E99 /* UIDeviceInchesExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F89452B1E783A7100C58E99 /* UIDeviceInchesExtension.swift */; };
 		6F8A3B901E6F2E9C0068BA02 /* WebServicesFromLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8A3B8F1E6F2E9C0068BA02 /* WebServicesFromLocal.swift */; };
 		6F8A3B931E6F2F4C0068BA02 /* WebServicesDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8A3B921E6F2F4C0068BA02 /* WebServicesDelegate.swift */; };
 		6F8A3B961E6F32840068BA02 /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F8A3B951E6F32840068BA02 /* products.json */; };
@@ -114,6 +115,7 @@
 		6F515B641E705D570062B141 /* BaseProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaseProject-Bridging-Header.h"; sourceTree = "<group>"; };
 		6F5E68471E76FAB600C3782A /* UIViewConstraintsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewConstraintsExtension.swift; sourceTree = "<group>"; };
 		6F6B03CF1E716C5D0049662C /* Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		6F89452B1E783A7100C58E99 /* UIDeviceInchesExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDeviceInchesExtension.swift; sourceTree = "<group>"; };
 		6F8A3B8F1E6F2E9C0068BA02 /* WebServicesFromLocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServicesFromLocal.swift; sourceTree = "<group>"; };
 		6F8A3B921E6F2F4C0068BA02 /* WebServicesDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServicesDelegate.swift; sourceTree = "<group>"; };
 		6F8A3B951E6F32840068BA02 /* products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; };
@@ -327,6 +329,7 @@
 			children = (
 				6F515B571E7000E20062B141 /* UIAlertControllerExtension.swift */,
 				6F5E68471E76FAB600C3782A /* UIViewConstraintsExtension.swift */,
+				6F89452B1E783A7100C58E99 /* UIDeviceInchesExtension.swift */,
 			);
 			name = extensions;
 			sourceTree = "<group>";
@@ -702,6 +705,7 @@
 				6F515B461E6F13F20062B141 /* Product.swift in Sources */,
 				6FAC05661E72D06D00A4FBB0 /* ImageDownloader.swift in Sources */,
 				6F515B551E6F219B0062B141 /* WebServicesLogger.swift in Sources */,
+				6F89452C1E783A7100C58E99 /* UIDeviceInchesExtension.swift in Sources */,
 				6F95916E1E782D3900BC9CCE /* CustomViewDelegate.swift in Sources */,
 				6F6B03D01E716C5D0049662C /* Cache.swift in Sources */,
 				6F8A3B931E6F2F4C0068BA02 /* WebServicesDelegate.swift in Sources */,

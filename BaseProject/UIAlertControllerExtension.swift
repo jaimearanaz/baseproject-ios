@@ -18,7 +18,9 @@ enum UIAlertControllerPreferred {
 
 extension UIAlertController {
 
-    class func showAlert(inViewController viewController: UIViewController,
+    // MARK: - Public methods
+    
+    static func showAlert(inViewController viewController: UIViewController,
                          withTitle title: String = "",
                          message: String,
                          dismissTitle: String,
@@ -35,7 +37,7 @@ extension UIAlertController {
         })
     }
     
-    class func showAlert(inViewController viewController: UIViewController,
+    static func showAlert(inViewController viewController: UIViewController,
                          withTitle title: String = "",
                          message: String,
                          dismissTitle: String,

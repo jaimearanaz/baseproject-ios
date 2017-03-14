@@ -8,7 +8,8 @@
 
 import Foundation
 
-@objc enum PrettyLogType: Int {
+enum PrettyLogType: Int {
+    
     case networkRequest
     case networkResponse
     case networkCacheResponse
@@ -23,9 +24,9 @@ import Foundation
     case none
 }
 
-@objc class PrettyLog: NSObject {
+class PrettyLog {
     
-    // MARK: Public methods
+    // MARK: - Public methods
     
     static func logMessage(_ message: String, type: PrettyLogType) {
         
@@ -40,7 +41,7 @@ import Foundation
         #endif
     }
     
-    // MARK: Private methods
+    // MARK: - Private methods
     
     static fileprivate func prettySymbolForType(_ type: PrettyLogType) -> String {
         

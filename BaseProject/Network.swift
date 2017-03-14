@@ -10,9 +10,11 @@ import Foundation
 
 import SystemConfiguration
 
-@objc open class Network: NSObject {
+class Network {
     
-    class func isConnected() -> Bool {
+    // MARK: - Public methods
+    
+    static func isConnected() -> Bool {
         
         var zeroAddress = sockaddr_in()
         zeroAddress.sin_len = UInt8(MemoryLayout.size(ofValue: zeroAddress))

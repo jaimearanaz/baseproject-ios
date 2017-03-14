@@ -18,6 +18,8 @@ protocol ImageDownloaderDelegate {
 
 class ImageDownloader {
 
+    // MARK: - Public methods
+    
     static func downloadAndCacheImages(_ images: [URL], completion: @escaping ((_ completed: UInt, _ skipped: UInt) -> Void) = {_, _ in }) {
         
         SDWebImagePrefetcher.shared().prefetchURLs(images,
