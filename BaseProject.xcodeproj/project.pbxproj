@@ -38,6 +38,8 @@
 		6F5E68481E76FAB600C3782A /* UIViewConstraintsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5E68471E76FAB600C3782A /* UIViewConstraintsExtension.swift */; };
 		6F6B03D01E716C5D0049662C /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6B03CF1E716C5D0049662C /* Cache.swift */; };
 		6F89452C1E783A7100C58E99 /* UIDeviceInchesExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F89452B1E783A7100C58E99 /* UIDeviceInchesExtension.swift */; };
+		6F89452E1E783F0A00C58E99 /* UIColorRGBExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F89452D1E783F0A00C58E99 /* UIColorRGBExtension.swift */; };
+		6F8945301E783F7A00C58E99 /* UIColorPaletteExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F89452F1E783F7A00C58E99 /* UIColorPaletteExtension.swift */; };
 		6F8A3B901E6F2E9C0068BA02 /* WebServicesFromLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8A3B8F1E6F2E9C0068BA02 /* WebServicesFromLocal.swift */; };
 		6F8A3B931E6F2F4C0068BA02 /* WebServicesDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8A3B921E6F2F4C0068BA02 /* WebServicesDelegate.swift */; };
 		6F8A3B961E6F32840068BA02 /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F8A3B951E6F32840068BA02 /* products.json */; };
@@ -116,6 +118,8 @@
 		6F5E68471E76FAB600C3782A /* UIViewConstraintsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewConstraintsExtension.swift; sourceTree = "<group>"; };
 		6F6B03CF1E716C5D0049662C /* Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		6F89452B1E783A7100C58E99 /* UIDeviceInchesExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDeviceInchesExtension.swift; sourceTree = "<group>"; };
+		6F89452D1E783F0A00C58E99 /* UIColorRGBExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorRGBExtension.swift; sourceTree = "<group>"; };
+		6F89452F1E783F7A00C58E99 /* UIColorPaletteExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorPaletteExtension.swift; sourceTree = "<group>"; };
 		6F8A3B8F1E6F2E9C0068BA02 /* WebServicesFromLocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServicesFromLocal.swift; sourceTree = "<group>"; };
 		6F8A3B921E6F2F4C0068BA02 /* WebServicesDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServicesDelegate.swift; sourceTree = "<group>"; };
 		6F8A3B951E6F32840068BA02 /* products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; };
@@ -328,8 +332,10 @@
 			isa = PBXGroup;
 			children = (
 				6F515B571E7000E20062B141 /* UIAlertControllerExtension.swift */,
-				6F5E68471E76FAB600C3782A /* UIViewConstraintsExtension.swift */,
+				6F89452D1E783F0A00C58E99 /* UIColorRGBExtension.swift */,
+				6F89452F1E783F7A00C58E99 /* UIColorPaletteExtension.swift */,
 				6F89452B1E783A7100C58E99 /* UIDeviceInchesExtension.swift */,
+				6F5E68471E76FAB600C3782A /* UIViewConstraintsExtension.swift */,
 			);
 			name = extensions;
 			sourceTree = "<group>";
@@ -698,6 +704,7 @@
 				6FF766871E6F48BD00F6468F /* SecondScreenTableDelegates.swift in Sources */,
 				6F515B481E6F160F0062B141 /* DataSourceDelegate.swift in Sources */,
 				6F515B3E1E6F0CFF0062B141 /* SecondScreenPresenter.swift in Sources */,
+				6F89452E1E783F0A00C58E99 /* UIColorRGBExtension.swift in Sources */,
 				6F515B301E6EC13F0062B141 /* FirstScreenPresenterDelegate.swift in Sources */,
 				6F515B5C1E702B960062B141 /* NetworkObserver.swift in Sources */,
 				6F9591681E7811C800BC9CCE /* UIViewLoadableFromNib.swift in Sources */,
@@ -710,6 +717,7 @@
 				6F6B03D01E716C5D0049662C /* Cache.swift in Sources */,
 				6F8A3B931E6F2F4C0068BA02 /* WebServicesDelegate.swift in Sources */,
 				6F515B321E6EC14D0062B141 /* FirstScreenViewControllerDelegate.swift in Sources */,
+				6F8945301E783F7A00C58E99 /* UIColorPaletteExtension.swift in Sources */,
 				6F515B3C1E6F0CF00062B141 /* SecondScreenViewController.swift in Sources */,
 				6F515AF51E6EC0130062B141 /* AppDelegate.swift in Sources */,
 				6F515B421E6F0D1E0062B141 /* SecondScreenViewControllerDelegate.swift in Sources */,
