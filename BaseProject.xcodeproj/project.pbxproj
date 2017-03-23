@@ -53,8 +53,8 @@
 		6FAC05641E72CE6700A4FBB0 /* SecondScreenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAC05631E72CE6700A4FBB0 /* SecondScreenTableViewCell.swift */; };
 		6FAC05661E72D06D00A4FBB0 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAC05651E72D06D00A4FBB0 /* ImageDownloader.swift */; };
 		6FF766851E6F47DF00F6468F /* SecondScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FF766841E6F47DF00F6468F /* SecondScreenViewController.xib */; };
-		6FF766871E6F48BD00F6468F /* SecondScreenTableDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF766861E6F48BD00F6468F /* SecondScreenTableDelegates.swift */; };
-		6FF766891E6F48CC00F6468F /* SecondScreenTableListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF766881E6F48CC00F6468F /* SecondScreenTableListener.swift */; };
+		6FF766871E6F48BD00F6468F /* SecondScreenTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF766861E6F48BD00F6468F /* SecondScreenTableController.swift */; };
+		6FF766891E6F48CC00F6468F /* SecondScreenTableControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF766881E6F48CC00F6468F /* SecondScreenTableControllerDelegate.swift */; };
 		6FF7668D1E6F4C0300F6468F /* SecondScreenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FF7668C1E6F4C0300F6468F /* SecondScreenTableViewCell.xib */; };
 		8150D28927C6990CFE44ADDA /* Pods_BaseProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F7BFF5371AF8D32F89B7C9 /* Pods_BaseProjectTests.framework */; };
 		B121615F2D6EAC109F5AEDC9 /* Pods_BaseProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA0CF46E3B573860023DFDD /* Pods_BaseProjectUITests.framework */; };
@@ -136,8 +136,8 @@
 		6FAC05631E72CE6700A4FBB0 /* SecondScreenTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondScreenTableViewCell.swift; sourceTree = "<group>"; };
 		6FAC05651E72D06D00A4FBB0 /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		6FF766841E6F47DF00F6468F /* SecondScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondScreenViewController.xib; sourceTree = "<group>"; };
-		6FF766861E6F48BD00F6468F /* SecondScreenTableDelegates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondScreenTableDelegates.swift; sourceTree = "<group>"; };
-		6FF766881E6F48CC00F6468F /* SecondScreenTableListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondScreenTableListener.swift; sourceTree = "<group>"; };
+		6FF766861E6F48BD00F6468F /* SecondScreenTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondScreenTableController.swift; sourceTree = "<group>"; };
+		6FF766881E6F48CC00F6468F /* SecondScreenTableControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondScreenTableControllerDelegate.swift; sourceTree = "<group>"; };
 		6FF7668C1E6F4C0300F6468F /* SecondScreenTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondScreenTableViewCell.xib; sourceTree = "<group>"; };
 		6FF9EFCA1E706159004C7011 /* BaseProject.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseProject.pch; sourceTree = "<group>"; };
 		75F7BFF5371AF8D32F89B7C9 /* Pods_BaseProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -290,9 +290,9 @@
 			children = (
 				6FF7668C1E6F4C0300F6468F /* SecondScreenTableViewCell.xib */,
 				6FAC05631E72CE6700A4FBB0 /* SecondScreenTableViewCell.swift */,
+				6FF766861E6F48BD00F6468F /* SecondScreenTableController.swift */,
+				6FF766881E6F48CC00F6468F /* SecondScreenTableControllerDelegate.swift */,
 				6FF766841E6F47DF00F6468F /* SecondScreenViewController.xib */,
-				6FF766861E6F48BD00F6468F /* SecondScreenTableDelegates.swift */,
-				6FF766881E6F48CC00F6468F /* SecondScreenTableListener.swift */,
 				6F515B3B1E6F0CF00062B141 /* SecondScreenViewController.swift */,
 				6F515B411E6F0D1E0062B141 /* SecondScreenViewControllerDelegate.swift */,
 				6F515B3F1E6F0D0C0062B141 /* SecondScreenPresenterDelegate.swift */,
@@ -705,12 +705,12 @@
 				6F515B2E1E6EC12C0062B141 /* FirstScreenPresenter.swift in Sources */,
 				6F5E68481E76FAB600C3782A /* UIViewConstraintsExtension.swift in Sources */,
 				6F8A3B901E6F2E9C0068BA02 /* WebServicesFromLocal.swift in Sources */,
-				6FF766891E6F48CC00F6468F /* SecondScreenTableListener.swift in Sources */,
+				6FF766891E6F48CC00F6468F /* SecondScreenTableControllerDelegate.swift in Sources */,
 				6F515B511E6F20CA0062B141 /* PrettyLog.swift in Sources */,
 				6F515B401E6F0D0C0062B141 /* SecondScreenPresenterDelegate.swift in Sources */,
 				6F515B271E6EC0B50062B141 /* Router.swift in Sources */,
 				6FAC05641E72CE6700A4FBB0 /* SecondScreenTableViewCell.swift in Sources */,
-				6FF766871E6F48BD00F6468F /* SecondScreenTableDelegates.swift in Sources */,
+				6FF766871E6F48BD00F6468F /* SecondScreenTableController.swift in Sources */,
 				6F515B481E6F160F0062B141 /* DataSourceDelegate.swift in Sources */,
 				6F515B3E1E6F0CFF0062B141 /* SecondScreenPresenter.swift in Sources */,
 				6F89452E1E783F0A00C58E99 /* UIColorRGBExtension.swift in Sources */,

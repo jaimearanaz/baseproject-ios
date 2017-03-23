@@ -9,11 +9,11 @@
 import Foundation
 import UIKit
 
-class SecondScreenViewController: UIViewController, SecondScreenViewControllerDelegate, SecondScreenTableListener {
+class SecondScreenViewController: UIViewController, SecondScreenViewControllerDelegate, SecondScreenTableControllerDelegate {
  
     @IBOutlet var tableView: UITableView!
     
-    var tableDelegate: SecondScreenTableDelegates?
+    var tableController: SecondScreenTableController?
     
     fileprivate var presenterDelegate: SecondScreenPresenterDelegate?
     
@@ -23,9 +23,9 @@ class SecondScreenViewController: UIViewController, SecondScreenViewControllerDe
         
         super.viewDidLoad()
         
-        tableDelegate = SecondScreenTableDelegates(tableView: tableView, listener: self)
-        tableView.delegate = tableDelegate
-        tableView.dataSource = tableDelegate
+        tableController = SecondScreenTableController(tableView: tableView, delegate: self)
+        tableView.delegate = tableController
+        tableView.dataSource = tableController
     }
     
     // MARK: - Public methods
@@ -53,7 +53,7 @@ class SecondScreenViewController: UIViewController, SecondScreenViewControllerDe
         }
     }
     
-    // MARK: - SecondScreenTableListener methods
+    // MARK: - SecondScreenTableControllerDelegate methods
     
     func didSelectRow(atIndex index: IndexPath) {
         
@@ -64,7 +64,7 @@ class SecondScreenViewController: UIViewController, SecondScreenViewControllerDe
     
     func showProducts(_ products: [Product]) {
         
-        tableDelegate?.products = products
+        tableController?.products = products
         tableView.reloadData()
     }
 }

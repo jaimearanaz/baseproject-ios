@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol SecondScreenTableListener {
- 
+protocol SecondScreenTableControllerDelegate {
+    
     func didSelectRow(atIndex index: IndexPath)
 }

@@ -9,21 +9,21 @@
 import Foundation
 import UIKit
 
-class SecondScreenTableDelegates: NSObject, UITableViewDelegate, UITableViewDataSource {
+class SecondScreenTableController: NSObject, UITableViewDelegate, UITableViewDataSource {
     
     var products = [Product]()
     
     fileprivate var tableView: UITableView?
-    fileprivate var listener: SecondScreenTableListener?
+    fileprivate var delegate: SecondScreenTableControllerDelegate?
     
     let cellHeight: CGFloat = 80
     
     // MARK: - Lifecycle methods
 
-    init(tableView: UITableView, listener: SecondScreenTableListener) {
+    init(tableView: UITableView, delegate: SecondScreenTableControllerDelegate) {
         
         self.tableView = tableView
-        self.listener = listener
+        self.delegate = delegate
         
         let identifier = String(describing: SecondScreenTableViewCell.self)
         let nib = UINib.init(nibName: identifier, bundle: nil)
@@ -61,6 +61,6 @@ class SecondScreenTableDelegates: NSObject, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
      
-        listener?.didSelectRow(atIndex: indexPath)
+        delegate?.didSelectRow(atIndex: indexPath)
     }
 }
