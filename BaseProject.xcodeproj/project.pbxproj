@@ -30,16 +30,16 @@
 		6F515B4E1E6F19F10062B141 /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F515B4D1E6F19F10062B141 /* WebServices.swift */; };
 		6F515B511E6F20CA0062B141 /* PrettyLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F515B501E6F20CA0062B141 /* PrettyLog.swift */; };
 		6F515B551E6F219B0062B141 /* WebServicesLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F515B541E6F219B0062B141 /* WebServicesLogger.swift */; };
-		6F515B581E7000E20062B141 /* UIAlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F515B571E7000E20062B141 /* UIAlertControllerExtension.swift */; };
+		6F515B581E7000E20062B141 /* UIAlertController+Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F515B571E7000E20062B141 /* UIAlertController+Blocks.swift */; };
 		6F515B5C1E702B960062B141 /* NetworkObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F515B5A1E702B960062B141 /* NetworkObserver.swift */; };
 		6F515B5E1E7043DA0062B141 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F515B5D1E7043DA0062B141 /* Network.swift */; };
 		6F515B611E7056BA0062B141 /* DefaultsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F515B601E7056BA0062B141 /* DefaultsDelegate.swift */; };
 		6F515B631E7056CD0062B141 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F515B621E7056CD0062B141 /* Defaults.swift */; };
-		6F5E68481E76FAB600C3782A /* UIViewConstraintsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5E68471E76FAB600C3782A /* UIViewConstraintsExtension.swift */; };
+		6F5E68481E76FAB600C3782A /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5E68471E76FAB600C3782A /* UIView+Constraints.swift */; };
 		6F6B03D01E716C5D0049662C /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6B03CF1E716C5D0049662C /* Cache.swift */; };
-		6F89452C1E783A7100C58E99 /* UIDeviceInchesExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F89452B1E783A7100C58E99 /* UIDeviceInchesExtension.swift */; };
-		6F89452E1E783F0A00C58E99 /* UIColorRGBExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F89452D1E783F0A00C58E99 /* UIColorRGBExtension.swift */; };
-		6F8945301E783F7A00C58E99 /* UIColorPaletteExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F89452F1E783F7A00C58E99 /* UIColorPaletteExtension.swift */; };
+		6F89452C1E783A7100C58E99 /* UIDevice+Inches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F89452B1E783A7100C58E99 /* UIDevice+Inches.swift */; };
+		6F89452E1E783F0A00C58E99 /* UIColor+Hex+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F89452D1E783F0A00C58E99 /* UIColor+Hex+RGB.swift */; };
+		6F8945301E783F7A00C58E99 /* UIColor+Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F89452F1E783F7A00C58E99 /* UIColor+Palette.swift */; };
 		6F8945331E78432A00C58E99 /* VersionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F8945321E78432A00C58E99 /* VersionInfo.m */; };
 		6F8945391E7849E500C58E99 /* iOSVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8945381E7849E500C58E99 /* iOSVersion.swift */; };
 		6F8A3B901E6F2E9C0068BA02 /* WebServicesFromLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8A3B8F1E6F2E9C0068BA02 /* WebServicesFromLocal.swift */; };
@@ -111,17 +111,17 @@
 		6F515B4D1E6F19F10062B141 /* WebServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
 		6F515B501E6F20CA0062B141 /* PrettyLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrettyLog.swift; sourceTree = "<group>"; };
 		6F515B541E6F219B0062B141 /* WebServicesLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServicesLogger.swift; sourceTree = "<group>"; };
-		6F515B571E7000E20062B141 /* UIAlertControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtension.swift; sourceTree = "<group>"; };
+		6F515B571E7000E20062B141 /* UIAlertController+Blocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Blocks.swift"; sourceTree = "<group>"; };
 		6F515B5A1E702B960062B141 /* NetworkObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkObserver.swift; sourceTree = "<group>"; };
 		6F515B5D1E7043DA0062B141 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		6F515B601E7056BA0062B141 /* DefaultsDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultsDelegate.swift; sourceTree = "<group>"; };
 		6F515B621E7056CD0062B141 /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		6F515B641E705D570062B141 /* BaseProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaseProject-Bridging-Header.h"; sourceTree = "<group>"; };
-		6F5E68471E76FAB600C3782A /* UIViewConstraintsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewConstraintsExtension.swift; sourceTree = "<group>"; };
+		6F5E68471E76FAB600C3782A /* UIView+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 		6F6B03CF1E716C5D0049662C /* Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
-		6F89452B1E783A7100C58E99 /* UIDeviceInchesExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDeviceInchesExtension.swift; sourceTree = "<group>"; };
-		6F89452D1E783F0A00C58E99 /* UIColorRGBExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorRGBExtension.swift; sourceTree = "<group>"; };
-		6F89452F1E783F7A00C58E99 /* UIColorPaletteExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorPaletteExtension.swift; sourceTree = "<group>"; };
+		6F89452B1E783A7100C58E99 /* UIDevice+Inches.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Inches.swift"; sourceTree = "<group>"; };
+		6F89452D1E783F0A00C58E99 /* UIColor+Hex+RGB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex+RGB.swift"; sourceTree = "<group>"; };
+		6F89452F1E783F7A00C58E99 /* UIColor+Palette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Palette.swift"; sourceTree = "<group>"; };
 		6F8945311E78432A00C58E99 /* VersionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VersionInfo.h; sourceTree = "<group>"; };
 		6F8945321E78432A00C58E99 /* VersionInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VersionInfo.m; sourceTree = "<group>"; };
 		6F8945381E7849E500C58E99 /* iOSVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOSVersion.swift; sourceTree = "<group>"; };
@@ -339,11 +339,11 @@
 		6F515B561E6FFDA80062B141 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
-				6F515B571E7000E20062B141 /* UIAlertControllerExtension.swift */,
-				6F89452D1E783F0A00C58E99 /* UIColorRGBExtension.swift */,
-				6F89452F1E783F7A00C58E99 /* UIColorPaletteExtension.swift */,
-				6F89452B1E783A7100C58E99 /* UIDeviceInchesExtension.swift */,
-				6F5E68471E76FAB600C3782A /* UIViewConstraintsExtension.swift */,
+				6F515B571E7000E20062B141 /* UIAlertController+Blocks.swift */,
+				6F89452D1E783F0A00C58E99 /* UIColor+Hex+RGB.swift */,
+				6F89452F1E783F7A00C58E99 /* UIColor+Palette.swift */,
+				6F89452B1E783A7100C58E99 /* UIDevice+Inches.swift */,
+				6F5E68471E76FAB600C3782A /* UIView+Constraints.swift */,
 			);
 			name = extensions;
 			sourceTree = "<group>";
@@ -703,7 +703,7 @@
 				6F515B4A1E6F162E0062B141 /* DataSource.swift in Sources */,
 				6F515B631E7056CD0062B141 /* Defaults.swift in Sources */,
 				6F515B2E1E6EC12C0062B141 /* FirstScreenPresenter.swift in Sources */,
-				6F5E68481E76FAB600C3782A /* UIViewConstraintsExtension.swift in Sources */,
+				6F5E68481E76FAB600C3782A /* UIView+Constraints.swift in Sources */,
 				6F8A3B901E6F2E9C0068BA02 /* WebServicesFromLocal.swift in Sources */,
 				6FF766891E6F48CC00F6468F /* SecondScreenTableControllerDelegate.swift in Sources */,
 				6F515B511E6F20CA0062B141 /* PrettyLog.swift in Sources */,
@@ -713,7 +713,7 @@
 				6FF766871E6F48BD00F6468F /* SecondScreenTableController.swift in Sources */,
 				6F515B481E6F160F0062B141 /* DataSourceDelegate.swift in Sources */,
 				6F515B3E1E6F0CFF0062B141 /* SecondScreenPresenter.swift in Sources */,
-				6F89452E1E783F0A00C58E99 /* UIColorRGBExtension.swift in Sources */,
+				6F89452E1E783F0A00C58E99 /* UIColor+Hex+RGB.swift in Sources */,
 				6F515B301E6EC13F0062B141 /* FirstScreenPresenterDelegate.swift in Sources */,
 				6F515B5C1E702B960062B141 /* NetworkObserver.swift in Sources */,
 				6F9591681E7811C800BC9CCE /* UIViewLoadableFromNib.swift in Sources */,
@@ -722,12 +722,12 @@
 				6FAC05661E72D06D00A4FBB0 /* ImageDownloader.swift in Sources */,
 				6F515B551E6F219B0062B141 /* WebServicesLogger.swift in Sources */,
 				6F8945391E7849E500C58E99 /* iOSVersion.swift in Sources */,
-				6F89452C1E783A7100C58E99 /* UIDeviceInchesExtension.swift in Sources */,
+				6F89452C1E783A7100C58E99 /* UIDevice+Inches.swift in Sources */,
 				6F95916E1E782D3900BC9CCE /* CustomViewDelegate.swift in Sources */,
 				6F6B03D01E716C5D0049662C /* Cache.swift in Sources */,
 				6F8A3B931E6F2F4C0068BA02 /* WebServicesDelegate.swift in Sources */,
 				6F515B321E6EC14D0062B141 /* FirstScreenViewControllerDelegate.swift in Sources */,
-				6F8945301E783F7A00C58E99 /* UIColorPaletteExtension.swift in Sources */,
+				6F8945301E783F7A00C58E99 /* UIColor+Palette.swift in Sources */,
 				6F515B3C1E6F0CF00062B141 /* SecondScreenViewController.swift in Sources */,
 				6F515AF51E6EC0130062B141 /* AppDelegate.swift in Sources */,
 				6F515B421E6F0D1E0062B141 /* SecondScreenViewControllerDelegate.swift in Sources */,
@@ -735,7 +735,7 @@
 				6F515B4C1E6F172F0062B141 /* RouterDelegate.swift in Sources */,
 				6F515B291E6EC0C00062B141 /* PresenterInstances.swift in Sources */,
 				6F515B4E1E6F19F10062B141 /* WebServices.swift in Sources */,
-				6F515B581E7000E20062B141 /* UIAlertControllerExtension.swift in Sources */,
+				6F515B581E7000E20062B141 /* UIAlertController+Blocks.swift in Sources */,
 				6F95916A1E782C3400BC9CCE /* CustomView.swift in Sources */,
 				6F515B2C1E6EC1170062B141 /* FirstScreenViewController.swift in Sources */,
 			);

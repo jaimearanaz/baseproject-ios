@@ -1,5 +1,5 @@
 //
-//  UIColorPaletteExtension.swift
+//  UIColor+Palette.swift
 //  BaseProject
 //
 //  Created by Jaime Aranaz on 14/03/2017.
@@ -21,6 +21,6 @@ extension UIColor {
     
     static func myAppCustomColor() -> UIColor {
         
-        return colorFromHex(myCustomColor)
+        return UIColor(hex: myCustomColor)
     }
 }

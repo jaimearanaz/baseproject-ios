@@ -1,5 +1,5 @@
 //
-//  UIDevice.swift
+//  UIDevice+Inches.swift
 //  BaseProject
 //
 //  Created by Jaime Aranaz on 14/03/2017.

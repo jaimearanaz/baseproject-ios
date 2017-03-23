@@ -10,28 +10,33 @@ import UIKit
 
 public class IOSVersion {
     
-    class func SYSTEM_VERSION_EQUAL_TO(version: NSString) -> Bool {
-        return UIDevice.current.systemVersion.compare(version as String,
-                                                              options: NSString.CompareOptions.numeric) == ComparisonResult.orderedSame
+    class func equalTo(_ version: NSString) -> Bool {
+        
+        let result = UIDevice.current.systemVersion.compare(version as String, options: NSString.CompareOptions.numeric)
+        return (result == ComparisonResult.orderedSame)
     }
     
-    class func SYSTEM_VERSION_GREATER_THAN(version: NSString) -> Bool {
-        return UIDevice.current.systemVersion.compare(version as String,
-                                                              options: NSString.CompareOptions.numeric) == ComparisonResult.orderedDescending
+    class func greaterThan(_ version: NSString) -> Bool {
+        
+        let result = UIDevice.current.systemVersion.compare(version as String, options: NSString.CompareOptions.numeric)
+        return (result == ComparisonResult.orderedDescending)
     }
     
-    class func SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(version: NSString) -> Bool {
-        return UIDevice.current.systemVersion.compare(version as String,
-                                                              options: NSString.CompareOptions.numeric) != ComparisonResult.orderedAscending
+    class func greaterThanOrEqualTo(_ version: NSString) -> Bool {
+        
+        let result = UIDevice.current.systemVersion.compare(version as String, options: NSString.CompareOptions.numeric)
+        return (result != ComparisonResult.orderedAscending)
     }
     
-    class func SYSTEM_VERSION_LESS_THAN(version: NSString) -> Bool {
-        return UIDevice.current.systemVersion.compare(version as String,
-                                                              options: NSString.CompareOptions.numeric) == ComparisonResult.orderedAscending
+    class func lowerThan(_ version: NSString) -> Bool {
+        
+        let result = UIDevice.current.systemVersion.compare(version as String, options: NSString.CompareOptions.numeric)
+        return (result == ComparisonResult.orderedAscending)
     }
     
-    class func SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(version: NSString) -> Bool {
-        return UIDevice.current.systemVersion.compare(version as String,
-                                                              options: NSString.CompareOptions.numeric) != ComparisonResult.orderedDescending
+    class func lowerThanOrEqualTo(_ version: NSString) -> Bool {
+        
+        let result = UIDevice.current.systemVersion.compare(version as String, options: NSString.CompareOptions.numeric)
+        return (result != ComparisonResult.orderedDescending)
     }
 }
