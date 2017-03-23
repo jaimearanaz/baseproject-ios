@@ -19,30 +19,13 @@ enum UIAlertControllerPreferred {
 extension UIAlertController {
 
     // MARK: - Public methods
-    
-    static func showAlert(inViewController viewController: UIViewController,
-                         withTitle title: String = "",
-                         message: String,
-                         dismissTitle: String,
-                         dismissHandler: @escaping (() -> Void) = {}) {
-        
-        UIAlertController.showAlert(in: viewController,
-                                    withTitle: title,
-                                    message: message,
-                                    cancelButtonTitle: nil,
-                                    destructiveButtonTitle: nil,
-                                    otherButtonTitles: [dismissTitle],
-                                    tap: {(controller, action, buttonIndex) in
-                                        dismissHandler()
-        })
-    }
-    
+
     static func showAlert(inViewController viewController: UIViewController,
                          withTitle title: String = "",
                          message: String,
                          dismissTitle: String,
                          dismissHandler: @escaping (() -> Void) = {},
-                         actionTitle: String,
+                         actionTitle: String = "",
                          actionHandler: @escaping (() -> Void) = {},
                          preferredTitle: UIAlertControllerPreferred = .none) {
         

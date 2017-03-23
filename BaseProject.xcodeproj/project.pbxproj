@@ -42,6 +42,12 @@
 		6F8945301E783F7A00C58E99 /* UIColor+Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F89452F1E783F7A00C58E99 /* UIColor+Palette.swift */; };
 		6F8945331E78432A00C58E99 /* VersionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F8945321E78432A00C58E99 /* VersionInfo.m */; };
 		6F8945391E7849E500C58E99 /* iOSVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8945381E7849E500C58E99 /* iOSVersion.swift */; };
+		6F89453C1E7850B400C58E99 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F89453B1E7850B400C58E99 /* BaseViewController.swift */; };
+		6F89453E1E7850BF00C58E99 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F89453D1E7850BF00C58E99 /* BasePresenter.swift */; };
+		6F8945401E7850CB00C58E99 /* BasePresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F89453F1E7850CB00C58E99 /* BasePresenterDelegate.swift */; };
+		6F8945421E7850DA00C58E99 /* BaseViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8945411E7850DA00C58E99 /* BaseViewControllerDelegate.swift */; };
+		6F8945441E78541000C58E99 /* LoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8945431E78541000C58E99 /* LoadingState.swift */; };
+		6F8945481E7854BE00C58E99 /* ViewControllerAlertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8945471E7854BE00C58E99 /* ViewControllerAlertable.swift */; };
 		6F8A3B901E6F2E9C0068BA02 /* WebServicesFromLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8A3B8F1E6F2E9C0068BA02 /* WebServicesFromLocal.swift */; };
 		6F8A3B931E6F2F4C0068BA02 /* WebServicesDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8A3B921E6F2F4C0068BA02 /* WebServicesDelegate.swift */; };
 		6F8A3B961E6F32840068BA02 /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F8A3B951E6F32840068BA02 /* products.json */; };
@@ -125,6 +131,12 @@
 		6F8945311E78432A00C58E99 /* VersionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VersionInfo.h; sourceTree = "<group>"; };
 		6F8945321E78432A00C58E99 /* VersionInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VersionInfo.m; sourceTree = "<group>"; };
 		6F8945381E7849E500C58E99 /* iOSVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOSVersion.swift; sourceTree = "<group>"; };
+		6F89453B1E7850B400C58E99 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		6F89453D1E7850BF00C58E99 /* BasePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		6F89453F1E7850CB00C58E99 /* BasePresenterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePresenterDelegate.swift; sourceTree = "<group>"; };
+		6F8945411E7850DA00C58E99 /* BaseViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewControllerDelegate.swift; sourceTree = "<group>"; };
+		6F8945431E78541000C58E99 /* LoadingState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingState.swift; sourceTree = "<group>"; };
+		6F8945471E7854BE00C58E99 /* ViewControllerAlertable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerAlertable.swift; sourceTree = "<group>"; };
 		6F8A3B8F1E6F2E9C0068BA02 /* WebServicesFromLocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServicesFromLocal.swift; sourceTree = "<group>"; };
 		6F8A3B921E6F2F4C0068BA02 /* WebServicesDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServicesDelegate.swift; sourceTree = "<group>"; };
 		6F8A3B951E6F32840068BA02 /* products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; };
@@ -233,6 +245,7 @@
 		6F515B221E6EC0450062B141 /* use cases */ = {
 			isa = PBXGroup;
 			children = (
+				6F89453A1E78509700C58E99 /* base classes */,
 				6F515B2A1E6EC0FD0062B141 /* first screen */,
 				6F515B381E6F0CC60062B141 /* second screen */,
 			);
@@ -355,6 +368,19 @@
 				6F515B601E7056BA0062B141 /* DefaultsDelegate.swift */,
 			);
 			name = defaults;
+			sourceTree = "<group>";
+		};
+		6F89453A1E78509700C58E99 /* base classes */ = {
+			isa = PBXGroup;
+			children = (
+				6F8945431E78541000C58E99 /* LoadingState.swift */,
+				6F8945471E7854BE00C58E99 /* ViewControllerAlertable.swift */,
+				6F89453B1E7850B400C58E99 /* BaseViewController.swift */,
+				6F8945411E7850DA00C58E99 /* BaseViewControllerDelegate.swift */,
+				6F89453F1E7850CB00C58E99 /* BasePresenterDelegate.swift */,
+				6F89453D1E7850BF00C58E99 /* BasePresenter.swift */,
+			);
+			name = "base classes";
 			sourceTree = "<group>";
 		};
 		6F8A3B911E6F2F320068BA02 /* webservices */ = {
@@ -699,11 +725,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F8945401E7850CB00C58E99 /* BasePresenterDelegate.swift in Sources */,
 				6F8945331E78432A00C58E99 /* VersionInfo.m in Sources */,
 				6F515B4A1E6F162E0062B141 /* DataSource.swift in Sources */,
 				6F515B631E7056CD0062B141 /* Defaults.swift in Sources */,
 				6F515B2E1E6EC12C0062B141 /* FirstScreenPresenter.swift in Sources */,
 				6F5E68481E76FAB600C3782A /* UIView+Constraints.swift in Sources */,
+				6F89453C1E7850B400C58E99 /* BaseViewController.swift in Sources */,
 				6F8A3B901E6F2E9C0068BA02 /* WebServicesFromLocal.swift in Sources */,
 				6FF766891E6F48CC00F6468F /* SecondScreenTableControllerDelegate.swift in Sources */,
 				6F515B511E6F20CA0062B141 /* PrettyLog.swift in Sources */,
@@ -716,6 +744,7 @@
 				6F89452E1E783F0A00C58E99 /* UIColor+Hex+RGB.swift in Sources */,
 				6F515B301E6EC13F0062B141 /* FirstScreenPresenterDelegate.swift in Sources */,
 				6F515B5C1E702B960062B141 /* NetworkObserver.swift in Sources */,
+				6F8945481E7854BE00C58E99 /* ViewControllerAlertable.swift in Sources */,
 				6F9591681E7811C800BC9CCE /* UIViewLoadableFromNib.swift in Sources */,
 				6F515B5E1E7043DA0062B141 /* Network.swift in Sources */,
 				6F515B461E6F13F20062B141 /* Product.swift in Sources */,
@@ -728,12 +757,15 @@
 				6F8A3B931E6F2F4C0068BA02 /* WebServicesDelegate.swift in Sources */,
 				6F515B321E6EC14D0062B141 /* FirstScreenViewControllerDelegate.swift in Sources */,
 				6F8945301E783F7A00C58E99 /* UIColor+Palette.swift in Sources */,
+				6F8945441E78541000C58E99 /* LoadingState.swift in Sources */,
+				6F8945421E7850DA00C58E99 /* BaseViewControllerDelegate.swift in Sources */,
 				6F515B3C1E6F0CF00062B141 /* SecondScreenViewController.swift in Sources */,
 				6F515AF51E6EC0130062B141 /* AppDelegate.swift in Sources */,
 				6F515B421E6F0D1E0062B141 /* SecondScreenViewControllerDelegate.swift in Sources */,
 				6F515B611E7056BA0062B141 /* DefaultsDelegate.swift in Sources */,
 				6F515B4C1E6F172F0062B141 /* RouterDelegate.swift in Sources */,
 				6F515B291E6EC0C00062B141 /* PresenterInstances.swift in Sources */,
+				6F89453E1E7850BF00C58E99 /* BasePresenter.swift in Sources */,
 				6F515B4E1E6F19F10062B141 /* WebServices.swift in Sources */,
 				6F515B581E7000E20062B141 /* UIAlertController+Blocks.swift in Sources */,
 				6F95916A1E782C3400BC9CCE /* CustomView.swift in Sources */,
