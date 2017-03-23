@@ -8,6 +8,23 @@
 
 import Foundation
 
-protocol BaseViewControllerDelegate: LoadingState, ViewControllerAlertable {
+protocol BaseViewControllerDelegate {
 
+    func startLoadingState()
+    
+    func stopLoadingState()
+    
+    func showAlert(title: String,
+                   message: String,
+                   dismissTitle: String,
+                   dismissHandler: @escaping (() -> Void),
+                   actionTitle: String,
+                   actionHandler: @escaping (() -> Void))
+}
+
+extension BaseViewControllerDelegate {
+    
+    func startLoadingState() {}
+    
+    func stopLoadingState() {}
 }

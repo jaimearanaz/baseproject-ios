@@ -20,13 +20,7 @@ class BaseViewController: UIViewController, BaseViewControllerDelegate {
         self.presenterDelegate = presenterDelegate
     }
     
-    // MARK: - LoadingState methods
-    
-    func startLoadingState() {}
-    
-    func stopLoadingState() {}
-    
-    // MARK: - ViewControllerAlertable methods
+    // MARK: - BaseViewControllerDelegate methods
 
     func showAlert(title: String = "",
                    message: String,
