@@ -14,7 +14,7 @@ class Network {
     
     // MARK: - Public methods
     
-    static func isConnected() -> Bool {
+    static func isInternetAvailable() -> Bool {
         
         var zeroAddress = sockaddr_in()
         zeroAddress.sin_len = UInt8(MemoryLayout.size(ofValue: zeroAddress))
