@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class FirstScreenViewController: UIViewController, FirstScreenViewControllerDelegate, CustomViewDelegate {
+class FirstScreenViewController: BaseViewController, FirstScreenViewControllerDelegate, CustomViewDelegate {
     
     @IBOutlet var customView: CustomView!
     @IBOutlet var activityIndicator: UIActivityIndicatorView!
@@ -31,7 +31,7 @@ class FirstScreenViewController: UIViewController, FirstScreenViewControllerDele
         
         self.presenterDelegate = presenterDelegate
     }
-    
+
     // MARK: - CustomViewDelegate methods
     
     func didSelectGetData() {
@@ -57,8 +57,7 @@ class FirstScreenViewController: UIViewController, FirstScreenViewControllerDele
     
     func showMessage(_ message: String) {
 
-        UIAlertController.showAlert(inViewController: self,
-                                    message: message,
-                                    dismissTitle: NSLocalizedString("ACCEPT", comment: "Accept button"))
+        showAlert(message: message,
+                  actionTitle: NSLocalizedString("ACCEPT", comment: "Accept button"))
     }
 }

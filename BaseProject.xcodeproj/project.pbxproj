@@ -30,7 +30,6 @@
 		6F515B4E1E6F19F10062B141 /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F515B4D1E6F19F10062B141 /* WebServices.swift */; };
 		6F515B511E6F20CA0062B141 /* PrettyLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F515B501E6F20CA0062B141 /* PrettyLog.swift */; };
 		6F515B551E6F219B0062B141 /* WebServicesLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F515B541E6F219B0062B141 /* WebServicesLogger.swift */; };
-		6F515B581E7000E20062B141 /* UIAlertController+Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F515B571E7000E20062B141 /* UIAlertController+Blocks.swift */; };
 		6F515B5C1E702B960062B141 /* NetworkObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F515B5A1E702B960062B141 /* NetworkObserver.swift */; };
 		6F515B5E1E7043DA0062B141 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F515B5D1E7043DA0062B141 /* Network.swift */; };
 		6F515B611E7056BA0062B141 /* DefaultsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F515B601E7056BA0062B141 /* DefaultsDelegate.swift */; };
@@ -115,7 +114,6 @@
 		6F515B4D1E6F19F10062B141 /* WebServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
 		6F515B501E6F20CA0062B141 /* PrettyLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrettyLog.swift; sourceTree = "<group>"; };
 		6F515B541E6F219B0062B141 /* WebServicesLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServicesLogger.swift; sourceTree = "<group>"; };
-		6F515B571E7000E20062B141 /* UIAlertController+Blocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Blocks.swift"; sourceTree = "<group>"; };
 		6F515B5A1E702B960062B141 /* NetworkObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkObserver.swift; sourceTree = "<group>"; };
 		6F515B5D1E7043DA0062B141 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		6F515B601E7056BA0062B141 /* DefaultsDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultsDelegate.swift; sourceTree = "<group>"; };
@@ -348,7 +346,6 @@
 		6F515B561E6FFDA80062B141 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
-				6F515B571E7000E20062B141 /* UIAlertController+Blocks.swift */,
 				6F89452D1E783F0A00C58E99 /* UIColor+Hex+RGB.swift */,
 				6F89452F1E783F7A00C58E99 /* UIColor+Palette.swift */,
 				6F89452B1E783A7100C58E99 /* UIDevice+Inches.swift */,
@@ -604,7 +601,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		81BF294784267F71E39F6FFF /* [CP] Embed Pods Frameworks */ = {
@@ -679,7 +676,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		BB04DAF09B1EF98BB1ADEA9C /* [CP] Check Pods Manifest.lock */ = {
@@ -694,7 +691,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		F22CE095412C3B84EEBC16B4 /* [CP] Embed Pods Frameworks */ = {
@@ -759,7 +756,6 @@
 				6F515B291E6EC0C00062B141 /* PresenterInstances.swift in Sources */,
 				6F89453E1E7850BF00C58E99 /* BasePresenter.swift in Sources */,
 				6F515B4E1E6F19F10062B141 /* WebServices.swift in Sources */,
-				6F515B581E7000E20062B141 /* UIAlertController+Blocks.swift in Sources */,
 				6F95916A1E782C3400BC9CCE /* CustomView.swift in Sources */,
 				6F515B2C1E6EC1170062B141 /* FirstScreenViewController.swift in Sources */,
 			);

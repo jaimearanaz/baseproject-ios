@@ -14,12 +14,14 @@ protocol BaseViewControllerDelegate {
     
     func stopLoadingState()
     
+    func showAlert(title: String, message: String, actionTitle: String, actionHandler: @escaping (() -> Void))
+    
     func showAlert(title: String,
                    message: String,
-                   dismissTitle: String,
-                   dismissHandler: @escaping (() -> Void),
-                   actionTitle: String,
-                   actionHandler: @escaping (() -> Void))
+                   leftActionTitle: String,
+                   leftActionHandler: @escaping (() -> Void),
+                   rightActionTitle: String,
+                   rightActionHandler: @escaping (() -> Void))
 }
 
 extension BaseViewControllerDelegate {
@@ -27,4 +29,13 @@ extension BaseViewControllerDelegate {
     func startLoadingState() {}
     
     func stopLoadingState() {}
+    
+    func showAlert(title: String = "", message: String, actionTitle: String, actionHandler: @escaping (() -> Void) = {}) {}
+    
+    func showAlert(title: String = "",
+                   message: String,
+                   leftActionTitle: String,
+                   leftActionHandler: @escaping (() -> Void) = {},
+                   rightActionTitle: String,
+                   rightActionHandler: @escaping (() -> Void)) {}
 }

@@ -21,20 +21,38 @@ class BaseViewController: UIViewController, BaseViewControllerDelegate {
     }
     
     // MARK: - BaseViewControllerDelegate methods
+    
+    func showAlert(title: String = "", message: String, actionTitle: String, actionHandler: @escaping (() -> Void) = {}) {
+    
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
 
+        let action = UIAlertAction(title: actionTitle, style: .default) { (action) in
+            actionHandler()
+        }
+        
+        alertController.addAction(action)
+        present(alertController, animated: true)
+    }
+    
     func showAlert(title: String = "",
                    message: String,
-                   dismissTitle: String,
-                   dismissHandler: @escaping (() -> Void) = {},
-                   actionTitle: String = "",
-                   actionHandler: @escaping (() -> Void) = {}) {
+                   leftActionTitle: String,
+                   leftActionHandler: @escaping (() -> Void) = {},
+                   rightActionTitle: String,
+                   rightActionHandler: @escaping (() -> Void)) {
     
-        UIAlertController.showAlert(inViewController: self,
-                                    withTitle: title,
-                                    message: message,
-                                    dismissTitle: dismissTitle,
-                                    dismissHandler: dismissHandler,
-                                    actionTitle: actionTitle,
-                                    actionHandler: actionHandler)
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        let rightAction = UIAlertAction(title: leftActionTitle, style: .default) { (action) in
+            leftActionHandler()
+        }
+        
+        let leftAction = UIAlertAction(title: rightActionTitle, style: .default) { (action) in
+            rightActionHandler()
+        }
+        
+        alertController.addAction(rightAction)
+        alertController.addAction(leftAction)
+        present(alertController, animated: true)
     }
 }

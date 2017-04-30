@@ -15,8 +15,6 @@ target 'BaseProject' do
   pod 'UINavigationControllerWithCompletionBlock'
   # load web images with cache
   pod 'SDWebImage'
-  #alerts with blocks
-  pod 'UIAlertController+Blocks'
   # network reachability state
   pod 'Reachability'
 
