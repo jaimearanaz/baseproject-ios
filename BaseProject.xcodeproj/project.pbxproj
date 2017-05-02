@@ -55,6 +55,9 @@
 		6F95916E1E782D3900BC9CCE /* CustomViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F95916D1E782D3900BC9CCE /* CustomViewDelegate.swift */; };
 		6FAC05641E72CE6700A4FBB0 /* SecondScreenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAC05631E72CE6700A4FBB0 /* SecondScreenTableViewCell.swift */; };
 		6FAC05661E72D06D00A4FBB0 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAC05651E72D06D00A4FBB0 /* ImageDownloader.swift */; };
+		6FC962801EB63271001D41A6 /* ProgressAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC9627F1EB63271001D41A6 /* ProgressAlertController.swift */; };
+		6FC962811EB63271001D41A6 /* ProgressAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC9627F1EB63271001D41A6 /* ProgressAlertController.swift */; };
+		6FC962821EB63271001D41A6 /* ProgressAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC9627F1EB63271001D41A6 /* ProgressAlertController.swift */; };
 		6FF766851E6F47DF00F6468F /* SecondScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FF766841E6F47DF00F6468F /* SecondScreenViewController.xib */; };
 		6FF766871E6F48BD00F6468F /* SecondScreenTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF766861E6F48BD00F6468F /* SecondScreenTableController.swift */; };
 		6FF766891E6F48CC00F6468F /* SecondScreenTableControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF766881E6F48CC00F6468F /* SecondScreenTableControllerDelegate.swift */; };
@@ -141,6 +144,7 @@
 		6F95916D1E782D3900BC9CCE /* CustomViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewDelegate.swift; sourceTree = "<group>"; };
 		6FAC05631E72CE6700A4FBB0 /* SecondScreenTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondScreenTableViewCell.swift; sourceTree = "<group>"; };
 		6FAC05651E72D06D00A4FBB0 /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		6FC9627F1EB63271001D41A6 /* ProgressAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressAlertController.swift; sourceTree = "<group>"; };
 		6FF766841E6F47DF00F6468F /* SecondScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondScreenViewController.xib; sourceTree = "<group>"; };
 		6FF766861E6F48BD00F6468F /* SecondScreenTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondScreenTableController.swift; sourceTree = "<group>"; };
 		6FF766881E6F48CC00F6468F /* SecondScreenTableControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondScreenTableControllerDelegate.swift; sourceTree = "<group>"; };
@@ -399,6 +403,7 @@
 			isa = PBXGroup;
 			children = (
 				6F9591671E7811C800BC9CCE /* UIViewLoadableFromNib.swift */,
+				6FC9627F1EB63271001D41A6 /* ProgressAlertController.swift */,
 			);
 			name = subclasses;
 			sourceTree = "<group>";
@@ -744,6 +749,7 @@
 				6F89452C1E783A7100C58E99 /* UIDevice+Inches.swift in Sources */,
 				6F95916E1E782D3900BC9CCE /* CustomViewDelegate.swift in Sources */,
 				6F6B03D01E716C5D0049662C /* Cache.swift in Sources */,
+				6FC962801EB63271001D41A6 /* ProgressAlertController.swift in Sources */,
 				6F8A3B931E6F2F4C0068BA02 /* WebServicesDelegate.swift in Sources */,
 				6F515B321E6EC14D0062B141 /* FirstScreenViewControllerDelegate.swift in Sources */,
 				6F8945301E783F7A00C58E99 /* UIColor+Palette.swift in Sources */,
@@ -765,6 +771,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FC962811EB63271001D41A6 /* ProgressAlertController.swift in Sources */,
 				6F515B0A1E6EC0130062B141 /* BaseProjectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -773,6 +780,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FC962821EB63271001D41A6 /* ProgressAlertController.swift in Sources */,
 				6F515B151E6EC0130062B141 /* BaseProjectUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
