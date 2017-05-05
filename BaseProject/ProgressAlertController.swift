@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-@objc class ProgressAlertController: UIAlertController {
+class ProgressAlertController: UIAlertController {
     
     fileprivate var contentViewController: UIViewController?
     fileprivate var progressView: UIProgressView?
@@ -54,9 +54,62 @@ import UIKit
         
         contentViewController!.view.addSubview(progressView!)
         
-        progressView!.addHeightConstraint(2)
-        progressView!.addCenterVerticallyInSuperviewConstraint()
-        progressView!.addLeadingSpaceToSuperviewConstraint(leadingSpace: -10)
-        progressView!.addTrailingSpaceToSuperviewConstraint(trailingSpace: 10)
+        addConstraintsToProgressView()
+    }
+    
+    fileprivate func addConstraintsToProgressView() {
+        
+        let height: CGFloat = 2
+        let heightConstraint = NSLayoutConstraint(
+            item: progressView!,
+            attribute: NSLayoutAttribute.height,
+            relatedBy: NSLayoutRelation.equal,
+            toItem: nil,
+            attribute: NSLayoutAttribute.notAnAttribute,
+            multiplier: 1,
+            constant: height)
+        progressView!.addConstraint(heightConstraint)
+        
+        let verticalCenterConstraint = NSLayoutConstraint(
+            item: progressView!,
+            attribute: NSLayoutAttribute.centerY,
+            relatedBy: NSLayoutRelation.equal,
+            toItem: progressView!.superview,
+            attribute: NSLayoutAttribute.centerY,
+            multiplier: 1,
+            constant: 0)
+        progressView!.superview!.addConstraint(verticalCenterConstraint)
+        
+        let horizontalCenterConstraint = NSLayoutConstraint(
+            item: progressView!,
+            attribute: NSLayoutAttribute.centerX,
+            relatedBy: NSLayoutRelation.equal,
+            toItem: progressView!.superview,
+            attribute: NSLayoutAttribute.centerX,
+            multiplier: 1,
+            constant: 0)
+        progressView!.superview!.addConstraint(horizontalCenterConstraint)
+        
+        let leading: CGFloat = -10
+        let leadingConstraint = NSLayoutConstraint(
+            item: progressView!.superview!,
+            attribute: NSLayoutAttribute.leading,
+            relatedBy: NSLayoutRelation.equal,
+            toItem: progressView!,
+            attribute: NSLayoutAttribute.leading,
+            multiplier: 1,
+            constant: leading)
+        progressView!.superview!.addConstraint(leadingConstraint)
+        
+        let trailing: CGFloat = 10
+        let trailingConstraint = NSLayoutConstraint(
+            item: progressView!.superview!,
+            attribute: NSLayoutAttribute.trailing,
+            relatedBy: NSLayoutRelation.equal,
+            toItem: progressView!,
+            attribute: NSLayoutAttribute.trailing,
+            multiplier: 1,
+            constant: trailing)
+        progressView!.superview!.addConstraint(trailingConstraint)
     }
 }
