@@ -9,18 +9,18 @@
 import Foundation
 import UIKit
 
-class ProgressAlertController: UIAlertController {
+@objc class ProgressAlertController: UIAlertController {
     
+    fileprivate var contentViewController: UIViewController?
     fileprivate var progressView: UIProgressView?
-    fileprivate var margin: CGFloat = 8.0
     
     // MARK: Lifecycle methods
     
-    override func viewWillLayoutSubviews() {
+    override func viewDidLoad() {
         
-        super.viewWillLayoutSubviews()
+        super.viewDidLoad()
         
-        addProgressBarIfNeeded()
+        setupProgressBar()
     }
     
     // MARK: Public methods
@@ -32,21 +32,31 @@ class ProgressAlertController: UIAlertController {
     
     // MARK: Private methods
     
-    fileprivate func addProgressBarIfNeeded() {
+    fileprivate func setupProgressBar() {
         
-        guard (self.progressView == nil) else {
-            return
-        }
+        addContentViewController()
+        addProgresBarView()
+    }
+    
+    fileprivate func addContentViewController() {
         
-        let rect = CGRect(x: margin,
-                          y: view.frame.size.height - margin,
-                          width: view.frame.width - margin * 2.0 ,
-                          height: 2.0)
-        self.progressView = UIProgressView(frame: rect)
-        self.progressView!.backgroundColor = UIColor.lightGray
-        self.progressView!.progress = 0.0
-        self.progressView!.tintColor = UIColor.black
+        contentViewController = UIViewController.init()
+        contentViewController!.view.addHeightConstraint(10)
+        setValue(contentViewController, forKey: "contentViewController")
+    }
+    
+    fileprivate func addProgresBarView() {
         
-        view.addSubview(self.progressView!)
+        progressView = UIProgressView(frame: CGRect.zero)
+        progressView!.translatesAutoresizingMaskIntoConstraints = false
+        progressView!.backgroundColor = UIColor.lightGray
+        progressView!.tintColor = UIColor.black
+        
+        contentViewController!.view.addSubview(progressView!)
+        
+        progressView!.addHeightConstraint(2)
+        progressView!.addCenterVerticallyInSuperviewConstraint()
+        progressView!.addLeadingSpaceToSuperviewConstraint(leadingSpace: -10)
+        progressView!.addTrailingSpaceToSuperviewConstraint(trailingSpace: 10)
     }
 }
