@@ -36,6 +36,9 @@
 		6F515B631E7056CD0062B141 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F515B621E7056CD0062B141 /* Defaults.swift */; };
 		6F5E68481E76FAB600C3782A /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5E68471E76FAB600C3782A /* UIView+Constraints.swift */; };
 		6F6B03D01E716C5D0049662C /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6B03CF1E716C5D0049662C /* Cache.swift */; };
+		6F774F6A1EBC8CB70007F57A /* ActivityAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F774F691EBC8CB70007F57A /* ActivityAlertController.swift */; };
+		6F774F6B1EBC8CB70007F57A /* ActivityAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F774F691EBC8CB70007F57A /* ActivityAlertController.swift */; };
+		6F774F6C1EBC8CB70007F57A /* ActivityAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F774F691EBC8CB70007F57A /* ActivityAlertController.swift */; };
 		6F89452C1E783A7100C58E99 /* UIDevice+Inches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F89452B1E783A7100C58E99 /* UIDevice+Inches.swift */; };
 		6F89452E1E783F0A00C58E99 /* UIColor+Hex+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F89452D1E783F0A00C58E99 /* UIColor+Hex+RGB.swift */; };
 		6F8945301E783F7A00C58E99 /* UIColor+Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F89452F1E783F7A00C58E99 /* UIColor+Palette.swift */; };
@@ -124,6 +127,7 @@
 		6F515B641E705D570062B141 /* BaseProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaseProject-Bridging-Header.h"; sourceTree = "<group>"; };
 		6F5E68471E76FAB600C3782A /* UIView+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 		6F6B03CF1E716C5D0049662C /* Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		6F774F691EBC8CB70007F57A /* ActivityAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityAlertController.swift; sourceTree = "<group>"; };
 		6F89452B1E783A7100C58E99 /* UIDevice+Inches.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Inches.swift"; sourceTree = "<group>"; };
 		6F89452D1E783F0A00C58E99 /* UIColor+Hex+RGB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex+RGB.swift"; sourceTree = "<group>"; };
 		6F89452F1E783F7A00C58E99 /* UIColor+Palette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Palette.swift"; sourceTree = "<group>"; };
@@ -404,6 +408,7 @@
 			children = (
 				6F9591671E7811C800BC9CCE /* UIViewLoadableFromNib.swift */,
 				6FC9627F1EB63271001D41A6 /* ProgressAlertController.swift */,
+				6F774F691EBC8CB70007F57A /* ActivityAlertController.swift */,
 			);
 			name = subclasses;
 			sourceTree = "<group>";
@@ -762,6 +767,7 @@
 				6F515B291E6EC0C00062B141 /* PresenterInstances.swift in Sources */,
 				6F89453E1E7850BF00C58E99 /* BasePresenter.swift in Sources */,
 				6F515B4E1E6F19F10062B141 /* WebServices.swift in Sources */,
+				6F774F6A1EBC8CB70007F57A /* ActivityAlertController.swift in Sources */,
 				6F95916A1E782C3400BC9CCE /* CustomView.swift in Sources */,
 				6F515B2C1E6EC1170062B141 /* FirstScreenViewController.swift in Sources */,
 			);
@@ -772,6 +778,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FC962811EB63271001D41A6 /* ProgressAlertController.swift in Sources */,
+				6F774F6B1EBC8CB70007F57A /* ActivityAlertController.swift in Sources */,
 				6F515B0A1E6EC0130062B141 /* BaseProjectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -781,6 +788,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FC962821EB63271001D41A6 /* ProgressAlertController.swift in Sources */,
+				6F774F6C1EBC8CB70007F57A /* ActivityAlertController.swift in Sources */,
 				6F515B151E6EC0130062B141 /* BaseProjectUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
