@@ -11,27 +11,58 @@ import UIKit
 
 @objc class ActivityAlertController: UIAlertController {
     
+    fileprivate var contentViewController: UIViewController?
+    fileprivate var activityView: UIActivityIndicatorView?
+    
+    // MARK: - Lifecycle methods
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
         
+        setupAlert()
+    }
+    
+    // MARK: - Private methods
+    
+    fileprivate func setupAlert() {
+        
+        addContentViewController()
         addActivityIndicator()
+    }
+    
+    fileprivate func addContentViewController() {
+        
+        contentViewController = UIViewController.init()
+        addConstraintsToContentView()
+
+        setValue(contentViewController, forKey: "contentViewController")
+    }
+    
+    fileprivate func addConstraintsToContentView() {
+        
+        contentViewController!.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[view(20)]",
+                                                                                  options: [],
+                                                                                  metrics: nil,
+                                                                                  views: ["view": contentViewController!.view]))
     }
     
     fileprivate func addActivityIndicator() {
         
-        let contentViewController = UIViewController.init()
+        activityView = UIActivityIndicatorView.init(frame: CGRect.zero)
+        activityView!.translatesAutoresizingMaskIntoConstraints = false
+        activityView!.activityIndicatorViewStyle = .gray
+        activityView!.startAnimating()
         
-        let activityView = UIActivityIndicatorView.init(frame: CGRect.zero)
-        activityView.translatesAutoresizingMaskIntoConstraints = false
-        activityView.activityIndicatorViewStyle = .gray
+        contentViewController?.view.addSubview(activityView!)
         
-        contentViewController.view.addSubview(activityView)
-        activityView.addCenterInSuperviewConstraints()
-        activityView.startAnimating()
-        
-        contentViewController.view.addHeightConstraint(20)
-        
-        setValue(contentViewController, forKey: "contentViewController")
+        addConstraintsToActivityIndicator()
+    }
+    
+    fileprivate func addConstraintsToActivityIndicator() {
+
+        let superview = activityView!.superview!
+        activityView!.centerXAnchor.constraint(equalTo: superview.centerXAnchor).isActive = true
+        activityView!.centerYAnchor.constraint(equalTo: superview.centerYAnchor).isActive = true
     }
 }

@@ -36,7 +36,10 @@ class FirstScreenViewController: BaseViewController, FirstScreenViewControllerDe
     
     func didSelectGetData() {
         
-        presenterDelegate?.didSelectGo()
+        //presenterDelegate?.didSelectGo()
+        let alert = ActivityAlertController(title: "Title", message: "Message", preferredStyle: .alert)
+        present(alert, animated: true) { 
+        }
     }
     
     // MARK: - FirstScreenViewControllerDelegate methods

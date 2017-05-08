@@ -67,11 +67,7 @@ class ProgressAlertController: UIAlertController {
     }
     
     fileprivate func addConstraintsToProgressView() {
-        
-        guard (progressView!.superview != nil) else {
-            return
-        }
-        
+
         let superview = progressView!.superview!
 
         superview.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-10-[progressView]-10-|",
