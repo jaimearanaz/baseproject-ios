@@ -39,6 +39,19 @@ class PresenterInstances {
         return presenter
     }()
     
+    lazy var thirdScreenPresenter: ThirdScreenPresenter = {
+        
+        let presenter = ThirdScreenPresenter()
+        let viewController = ThirdScreenViewController(nibName: "ThirdScreenViewController", bundle: nil)
+        
+        presenter.setupPresenter(controllerDelegate: viewController,
+                                 dataSource: self.dataSource!,
+                                 router: self.router!)
+        viewController.setupViewController(presenterDelegate: presenter)
+        
+        return presenter
+    }()
+    
     // MARK: - Public methods
     
     func setupPresenterInstances(router: RouterDelegate, dataSource: DataSourceDelegate) {

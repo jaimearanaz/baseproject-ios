@@ -10,5 +10,7 @@ import Foundation
 
 protocol FirstScreenPresenterDelegate {
 
-    func didSelectGo()
+    func didSelectTable()
+    
+    func didSelectCollection()
 }

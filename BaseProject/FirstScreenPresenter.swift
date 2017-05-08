@@ -35,8 +35,8 @@ class FirstScreenPresenter: FirstScreenPresenterDelegate {
     
     // MARK: - FirstScreenPresenterDelegate methods
     
-    func didSelectGo() {
-        
+    func didSelectTable() {
+
         if (dataSource?.isFirstExecution() ?? false) {
             dataSource?.setFirstExecution(false)
         }
@@ -59,6 +59,12 @@ class FirstScreenPresenter: FirstScreenPresenterDelegate {
                 self.controllerDelegate?.showMessage(message)
             }
         })
+    }
+    
+    
+    func didSelectCollection() {
+        
+        router?.presentThirdScreen()
     }
     
     // MARK: - Private methods

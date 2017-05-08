@@ -12,14 +12,20 @@ import UIKit
 class CustomView: UIViewLoadableFromNib {
     
     @IBOutlet var label: UILabel!
-    @IBOutlet var button: UIButton!
+    @IBOutlet var tableButton: UIButton!
+    @IBOutlet var collectionButton: UIButton!
     
     var delegate: CustomViewDelegate?
     
     // MARK: - Action methods
     
-    @IBAction func didSelectGetData() {
+    @IBAction func didSelectTableButton() {
         
-        delegate?.didSelectGetData()
+        delegate?.didSelectTableButton()
+    }
+    
+    @IBAction func didSelectCollectionButton() {
+        
+        delegate?.didSelectCollectionButton()
     }
 }

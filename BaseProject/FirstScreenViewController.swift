@@ -34,12 +34,14 @@ class FirstScreenViewController: BaseViewController, FirstScreenViewControllerDe
 
     // MARK: - CustomViewDelegate methods
     
-    func didSelectGetData() {
+    func didSelectTableButton() {
         
-        //presenterDelegate?.didSelectGo()
-        let alert = ActivityAlertController(title: "Title", message: "Message", preferredStyle: .alert)
-        present(alert, animated: true) { 
-        }
+        presenterDelegate?.didSelectTable()
+    }
+    
+    func didSelectCollectionButton() {
+        
+        presenterDelegate?.didSelectCollection()
     }
     
     // MARK: - FirstScreenViewControllerDelegate methods

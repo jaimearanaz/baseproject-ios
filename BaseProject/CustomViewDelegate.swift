@@ -10,5 +10,7 @@ import Foundation
 
 protocol CustomViewDelegate {
     
-    func didSelectGetData()
+    func didSelectTableButton()
+    
+    func didSelectCollectionButton()
 }

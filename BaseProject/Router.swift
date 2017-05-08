@@ -45,4 +45,13 @@ class Router: RouterDelegate {
             })
         }
     }
+    
+    func presentThirdScreen() {
+        
+        let thirdPresenter = presenterInstances?.thirdScreenPresenter
+        if let viewController = thirdPresenter?.viewController() {
+            
+            navigationController?.pushViewController(viewController, animated: true)
+        }
+    }
 }

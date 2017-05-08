@@ -61,6 +61,33 @@
 		6FC962801EB63271001D41A6 /* ProgressAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC9627F1EB63271001D41A6 /* ProgressAlertController.swift */; };
 		6FC962811EB63271001D41A6 /* ProgressAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC9627F1EB63271001D41A6 /* ProgressAlertController.swift */; };
 		6FC962821EB63271001D41A6 /* ProgressAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC9627F1EB63271001D41A6 /* ProgressAlertController.swift */; };
+		6FDDD5E31EC0AF52000A2A6D /* ThirdScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDDD5E21EC0AF52000A2A6D /* ThirdScreenViewController.swift */; };
+		6FDDD5E41EC0AF52000A2A6D /* ThirdScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDDD5E21EC0AF52000A2A6D /* ThirdScreenViewController.swift */; };
+		6FDDD5E51EC0AF52000A2A6D /* ThirdScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDDD5E21EC0AF52000A2A6D /* ThirdScreenViewController.swift */; };
+		6FDDD5E71EC0AF64000A2A6D /* ThirdScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDDD5E61EC0AF64000A2A6D /* ThirdScreenPresenter.swift */; };
+		6FDDD5E81EC0AF64000A2A6D /* ThirdScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDDD5E61EC0AF64000A2A6D /* ThirdScreenPresenter.swift */; };
+		6FDDD5E91EC0AF64000A2A6D /* ThirdScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDDD5E61EC0AF64000A2A6D /* ThirdScreenPresenter.swift */; };
+		6FDDD5EB1EC0AF85000A2A6D /* ThirdScreenViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDDD5EA1EC0AF85000A2A6D /* ThirdScreenViewControllerDelegate.swift */; };
+		6FDDD5EC1EC0AF85000A2A6D /* ThirdScreenViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDDD5EA1EC0AF85000A2A6D /* ThirdScreenViewControllerDelegate.swift */; };
+		6FDDD5ED1EC0AF85000A2A6D /* ThirdScreenViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDDD5EA1EC0AF85000A2A6D /* ThirdScreenViewControllerDelegate.swift */; };
+		6FDDD5EF1EC0AF95000A2A6D /* ThirdScreenPresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDDD5EE1EC0AF95000A2A6D /* ThirdScreenPresenterDelegate.swift */; };
+		6FDDD5F01EC0AF95000A2A6D /* ThirdScreenPresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDDD5EE1EC0AF95000A2A6D /* ThirdScreenPresenterDelegate.swift */; };
+		6FDDD5F11EC0AF95000A2A6D /* ThirdScreenPresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDDD5EE1EC0AF95000A2A6D /* ThirdScreenPresenterDelegate.swift */; };
+		6FDDD5F31EC0B11A000A2A6D /* ThirdScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FDDD5F21EC0B11A000A2A6D /* ThirdScreenViewController.xib */; };
+		6FDDD5F41EC0B11A000A2A6D /* ThirdScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FDDD5F21EC0B11A000A2A6D /* ThirdScreenViewController.xib */; };
+		6FDDD5F51EC0B11A000A2A6D /* ThirdScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FDDD5F21EC0B11A000A2A6D /* ThirdScreenViewController.xib */; };
+		6FDDD5F71EC0B1CF000A2A6D /* ThirdScreenCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDDD5F61EC0B1CF000A2A6D /* ThirdScreenCollectionController.swift */; };
+		6FDDD5F81EC0B1CF000A2A6D /* ThirdScreenCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDDD5F61EC0B1CF000A2A6D /* ThirdScreenCollectionController.swift */; };
+		6FDDD5F91EC0B1CF000A2A6D /* ThirdScreenCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDDD5F61EC0B1CF000A2A6D /* ThirdScreenCollectionController.swift */; };
+		6FDDD5FB1EC0B1F0000A2A6D /* ThirdScreenCollectionControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDDD5FA1EC0B1F0000A2A6D /* ThirdScreenCollectionControllerDelegate.swift */; };
+		6FDDD5FC1EC0B1F0000A2A6D /* ThirdScreenCollectionControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDDD5FA1EC0B1F0000A2A6D /* ThirdScreenCollectionControllerDelegate.swift */; };
+		6FDDD5FD1EC0B1F0000A2A6D /* ThirdScreenCollectionControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDDD5FA1EC0B1F0000A2A6D /* ThirdScreenCollectionControllerDelegate.swift */; };
+		6FDDD5FF1EC0BD12000A2A6D /* ThirdScreenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDDD5FE1EC0BD12000A2A6D /* ThirdScreenCollectionViewCell.swift */; };
+		6FDDD6001EC0BD12000A2A6D /* ThirdScreenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDDD5FE1EC0BD12000A2A6D /* ThirdScreenCollectionViewCell.swift */; };
+		6FDDD6011EC0BD12000A2A6D /* ThirdScreenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDDD5FE1EC0BD12000A2A6D /* ThirdScreenCollectionViewCell.swift */; };
+		6FDDD6031EC0BD1F000A2A6D /* ThirdScreenCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FDDD6021EC0BD1F000A2A6D /* ThirdScreenCollectionViewCell.xib */; };
+		6FDDD6041EC0BD1F000A2A6D /* ThirdScreenCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FDDD6021EC0BD1F000A2A6D /* ThirdScreenCollectionViewCell.xib */; };
+		6FDDD6051EC0BD1F000A2A6D /* ThirdScreenCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FDDD6021EC0BD1F000A2A6D /* ThirdScreenCollectionViewCell.xib */; };
 		6FF766851E6F47DF00F6468F /* SecondScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FF766841E6F47DF00F6468F /* SecondScreenViewController.xib */; };
 		6FF766871E6F48BD00F6468F /* SecondScreenTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF766861E6F48BD00F6468F /* SecondScreenTableController.swift */; };
 		6FF766891E6F48CC00F6468F /* SecondScreenTableControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF766881E6F48CC00F6468F /* SecondScreenTableControllerDelegate.swift */; };
@@ -149,6 +176,15 @@
 		6FAC05631E72CE6700A4FBB0 /* SecondScreenTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondScreenTableViewCell.swift; sourceTree = "<group>"; };
 		6FAC05651E72D06D00A4FBB0 /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		6FC9627F1EB63271001D41A6 /* ProgressAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressAlertController.swift; sourceTree = "<group>"; };
+		6FDDD5E21EC0AF52000A2A6D /* ThirdScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdScreenViewController.swift; sourceTree = "<group>"; };
+		6FDDD5E61EC0AF64000A2A6D /* ThirdScreenPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdScreenPresenter.swift; sourceTree = "<group>"; };
+		6FDDD5EA1EC0AF85000A2A6D /* ThirdScreenViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdScreenViewControllerDelegate.swift; sourceTree = "<group>"; };
+		6FDDD5EE1EC0AF95000A2A6D /* ThirdScreenPresenterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdScreenPresenterDelegate.swift; sourceTree = "<group>"; };
+		6FDDD5F21EC0B11A000A2A6D /* ThirdScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdScreenViewController.xib; sourceTree = "<group>"; };
+		6FDDD5F61EC0B1CF000A2A6D /* ThirdScreenCollectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdScreenCollectionController.swift; sourceTree = "<group>"; };
+		6FDDD5FA1EC0B1F0000A2A6D /* ThirdScreenCollectionControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdScreenCollectionControllerDelegate.swift; sourceTree = "<group>"; };
+		6FDDD5FE1EC0BD12000A2A6D /* ThirdScreenCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdScreenCollectionViewCell.swift; sourceTree = "<group>"; };
+		6FDDD6021EC0BD1F000A2A6D /* ThirdScreenCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdScreenCollectionViewCell.xib; sourceTree = "<group>"; };
 		6FF766841E6F47DF00F6468F /* SecondScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondScreenViewController.xib; sourceTree = "<group>"; };
 		6FF766861E6F48BD00F6468F /* SecondScreenTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondScreenTableController.swift; sourceTree = "<group>"; };
 		6FF766881E6F48CC00F6468F /* SecondScreenTableControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondScreenTableControllerDelegate.swift; sourceTree = "<group>"; };
@@ -250,6 +286,7 @@
 				6F89453A1E78509700C58E99 /* base classes */,
 				6F515B2A1E6EC0FD0062B141 /* first screen */,
 				6F515B381E6F0CC60062B141 /* second screen */,
+				6FDDD5E11EC0AF10000A2A6D /* third screen */,
 			);
 			name = "use cases";
 			sourceTree = "<group>";
@@ -413,6 +450,22 @@
 			name = subclasses;
 			sourceTree = "<group>";
 		};
+		6FDDD5E11EC0AF10000A2A6D /* third screen */ = {
+			isa = PBXGroup;
+			children = (
+				6FDDD6021EC0BD1F000A2A6D /* ThirdScreenCollectionViewCell.xib */,
+				6FDDD5FE1EC0BD12000A2A6D /* ThirdScreenCollectionViewCell.swift */,
+				6FDDD5F21EC0B11A000A2A6D /* ThirdScreenViewController.xib */,
+				6FDDD5F61EC0B1CF000A2A6D /* ThirdScreenCollectionController.swift */,
+				6FDDD5FA1EC0B1F0000A2A6D /* ThirdScreenCollectionControllerDelegate.swift */,
+				6FDDD5E21EC0AF52000A2A6D /* ThirdScreenViewController.swift */,
+				6FDDD5EA1EC0AF85000A2A6D /* ThirdScreenViewControllerDelegate.swift */,
+				6FDDD5EE1EC0AF95000A2A6D /* ThirdScreenPresenterDelegate.swift */,
+				6FDDD5E61EC0AF64000A2A6D /* ThirdScreenPresenter.swift */,
+			);
+			name = "third screen";
+			sourceTree = "<group>";
+		};
 		8727EF43D6D890B93F523DFD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -559,10 +612,12 @@
 				6F8A3B961E6F32840068BA02 /* products.json in Resources */,
 				6F8A3B991E6F34FF0068BA02 /* Localizable.strings in Resources */,
 				6F515AFF1E6EC0130062B141 /* LaunchScreen.storyboard in Resources */,
+				6FDDD5F31EC0B11A000A2A6D /* ThirdScreenViewController.xib in Resources */,
 				6FF766851E6F47DF00F6468F /* SecondScreenViewController.xib in Resources */,
 				6F515B341E6EC1700062B141 /* FirstScreenViewController.xib in Resources */,
 				6F95916C1E782C5B00BC9CCE /* CustomView.xib in Resources */,
 				6FF7668D1E6F4C0300F6468F /* SecondScreenTableViewCell.xib in Resources */,
+				6FDDD6031EC0BD1F000A2A6D /* ThirdScreenCollectionViewCell.xib in Resources */,
 				6F515AFC1E6EC0130062B141 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -571,6 +626,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FDDD6041EC0BD1F000A2A6D /* ThirdScreenCollectionViewCell.xib in Resources */,
+				6FDDD5F41EC0B11A000A2A6D /* ThirdScreenViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,6 +635,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FDDD6051EC0BD1F000A2A6D /* ThirdScreenCollectionViewCell.xib in Resources */,
+				6FDDD5F51EC0B11A000A2A6D /* ThirdScreenViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -727,6 +786,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F8945401E7850CB00C58E99 /* BasePresenterDelegate.swift in Sources */,
+				6FDDD5E31EC0AF52000A2A6D /* ThirdScreenViewController.swift in Sources */,
+				6FDDD5E71EC0AF64000A2A6D /* ThirdScreenPresenter.swift in Sources */,
 				6F8945331E78432A00C58E99 /* VersionInfo.m in Sources */,
 				6F515B4A1E6F162E0062B141 /* DataSource.swift in Sources */,
 				6F515B631E7056CD0062B141 /* Defaults.swift in Sources */,
@@ -737,6 +798,7 @@
 				6FF766891E6F48CC00F6468F /* SecondScreenTableControllerDelegate.swift in Sources */,
 				6F515B511E6F20CA0062B141 /* PrettyLog.swift in Sources */,
 				6F515B401E6F0D0C0062B141 /* SecondScreenPresenterDelegate.swift in Sources */,
+				6FDDD5FF1EC0BD12000A2A6D /* ThirdScreenCollectionViewCell.swift in Sources */,
 				6F515B271E6EC0B50062B141 /* Router.swift in Sources */,
 				6FAC05641E72CE6700A4FBB0 /* SecondScreenTableViewCell.swift in Sources */,
 				6FF766871E6F48BD00F6468F /* SecondScreenTableController.swift in Sources */,
@@ -745,8 +807,10 @@
 				6F89452E1E783F0A00C58E99 /* UIColor+Hex+RGB.swift in Sources */,
 				6F515B301E6EC13F0062B141 /* FirstScreenPresenterDelegate.swift in Sources */,
 				6F515B5C1E702B960062B141 /* NetworkObserver.swift in Sources */,
+				6FDDD5F71EC0B1CF000A2A6D /* ThirdScreenCollectionController.swift in Sources */,
 				6F9591681E7811C800BC9CCE /* UIViewLoadableFromNib.swift in Sources */,
 				6F515B5E1E7043DA0062B141 /* Network.swift in Sources */,
+				6FDDD5EF1EC0AF95000A2A6D /* ThirdScreenPresenterDelegate.swift in Sources */,
 				6F515B461E6F13F20062B141 /* Product.swift in Sources */,
 				6FAC05661E72D06D00A4FBB0 /* ImageDownloader.swift in Sources */,
 				6F515B551E6F219B0062B141 /* WebServicesLogger.swift in Sources */,
@@ -768,7 +832,9 @@
 				6F89453E1E7850BF00C58E99 /* BasePresenter.swift in Sources */,
 				6F515B4E1E6F19F10062B141 /* WebServices.swift in Sources */,
 				6F774F6A1EBC8CB70007F57A /* ActivityAlertController.swift in Sources */,
+				6FDDD5FB1EC0B1F0000A2A6D /* ThirdScreenCollectionControllerDelegate.swift in Sources */,
 				6F95916A1E782C3400BC9CCE /* CustomView.swift in Sources */,
+				6FDDD5EB1EC0AF85000A2A6D /* ThirdScreenViewControllerDelegate.swift in Sources */,
 				6F515B2C1E6EC1170062B141 /* FirstScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -777,7 +843,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FDDD5E41EC0AF52000A2A6D /* ThirdScreenViewController.swift in Sources */,
 				6FC962811EB63271001D41A6 /* ProgressAlertController.swift in Sources */,
+				6FDDD6001EC0BD12000A2A6D /* ThirdScreenCollectionViewCell.swift in Sources */,
+				6FDDD5E81EC0AF64000A2A6D /* ThirdScreenPresenter.swift in Sources */,
+				6FDDD5F81EC0B1CF000A2A6D /* ThirdScreenCollectionController.swift in Sources */,
+				6FDDD5FC1EC0B1F0000A2A6D /* ThirdScreenCollectionControllerDelegate.swift in Sources */,
+				6FDDD5F01EC0AF95000A2A6D /* ThirdScreenPresenterDelegate.swift in Sources */,
+				6FDDD5EC1EC0AF85000A2A6D /* ThirdScreenViewControllerDelegate.swift in Sources */,
 				6F774F6B1EBC8CB70007F57A /* ActivityAlertController.swift in Sources */,
 				6F515B0A1E6EC0130062B141 /* BaseProjectTests.swift in Sources */,
 			);
@@ -787,7 +860,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FDDD5E51EC0AF52000A2A6D /* ThirdScreenViewController.swift in Sources */,
 				6FC962821EB63271001D41A6 /* ProgressAlertController.swift in Sources */,
+				6FDDD6011EC0BD12000A2A6D /* ThirdScreenCollectionViewCell.swift in Sources */,
+				6FDDD5E91EC0AF64000A2A6D /* ThirdScreenPresenter.swift in Sources */,
+				6FDDD5F91EC0B1CF000A2A6D /* ThirdScreenCollectionController.swift in Sources */,
+				6FDDD5FD1EC0B1F0000A2A6D /* ThirdScreenCollectionControllerDelegate.swift in Sources */,
+				6FDDD5F11EC0AF95000A2A6D /* ThirdScreenPresenterDelegate.swift in Sources */,
+				6FDDD5ED1EC0AF85000A2A6D /* ThirdScreenViewControllerDelegate.swift in Sources */,
 				6F774F6C1EBC8CB70007F57A /* ActivityAlertController.swift in Sources */,
 				6F515B151E6EC0130062B141 /* BaseProjectUITests.swift in Sources */,
 			);

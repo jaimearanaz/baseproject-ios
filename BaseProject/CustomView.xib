@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomView" customModule="BaseProject" customModuleProvider="target">
             <connections>
-                <outlet property="button" destination="BDp-j4-e9F" id="00l-bm-o62"/>
+                <outlet property="collectionButton" destination="G6O-he-6RW" id="uJb-da-B1u"/>
                 <outlet property="label" destination="aig-2P-axs" id="4ov-4g-SzW"/>
+                <outlet property="tableButton" destination="BDp-j4-e9F" id="grk-pm-Jxa"/>
                 <outlet property="view" destination="iN0-l3-epB" id="qXt-Jr-e7T"/>
             </connections>
         </placeholder>
@@ -24,30 +25,44 @@
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aig-2P-axs">
                     <rect key="frame" x="114" y="323" width="147" height="21"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="21" id="4Do-xE-Mb0"/>
-                        <constraint firstAttribute="width" constant="147" id="wj8-M0-Wew"/>
+                        <constraint firstAttribute="height" constant="21" id="NkS-TN-sCe"/>
+                        <constraint firstAttribute="width" constant="147" id="jwG-VB-cae"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDp-j4-e9F">
-                    <rect key="frame" x="146" y="352" width="83" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDp-j4-e9F" userLabel="Table button">
+                    <rect key="frame" x="135" y="352" width="105" height="30"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="83" id="Xhr-m1-cxB"/>
+                        <constraint firstAttribute="height" constant="30" id="Cwa-Cs-GBS"/>
+                        <constraint firstAttribute="width" constant="105" id="DJi-wp-7PG"/>
                     </constraints>
-                    <state key="normal" title="Get data"/>
+                    <state key="normal" title="Table button"/>
                     <connections>
-                        <action selector="didSelectGetData" destination="-1" eventType="touchUpInside" id="J20-r7-5wT"/>
+                        <action selector="didSelectTableButton" destination="-1" eventType="touchUpInside" id="L1T-1T-CRg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6O-he-6RW" userLabel="Collection button">
+                    <rect key="frame" x="119" y="390" width="136" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="136" id="KTA-5y-z41"/>
+                        <constraint firstAttribute="height" constant="30" id="scy-bF-J8F"/>
+                    </constraints>
+                    <state key="normal" title="Collection button"/>
+                    <connections>
+                        <action selector="didSelectCollectionButton" destination="-1" eventType="touchUpInside" id="9kf-5B-LZ0"/>
                     </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="BDp-j4-e9F" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="SOv-gJ-zKw"/>
-                <constraint firstItem="BDp-j4-e9F" firstAttribute="top" secondItem="aig-2P-axs" secondAttribute="bottom" constant="8" id="VU6-lu-Omd"/>
-                <constraint firstItem="aig-2P-axs" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="XGE-RL-L5X"/>
-                <constraint firstItem="aig-2P-axs" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ku8-EP-L0D"/>
+                <constraint firstItem="BDp-j4-e9F" firstAttribute="top" secondItem="aig-2P-axs" secondAttribute="bottom" constant="8" id="FRB-if-dLZ"/>
+                <constraint firstItem="G6O-he-6RW" firstAttribute="top" secondItem="BDp-j4-e9F" secondAttribute="bottom" constant="8" id="M3A-3g-7DR"/>
+                <constraint firstItem="G6O-he-6RW" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="PkD-Xl-lge"/>
+                <constraint firstItem="BDp-j4-e9F" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cNV-5n-S49"/>
+                <constraint firstItem="aig-2P-axs" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="s2Q-B7-3ln"/>
+                <constraint firstItem="aig-2P-axs" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="un5-hL-hbL"/>
             </constraints>
             <point key="canvasLocation" x="34.5" y="59.5"/>
         </view>

@@ -11,4 +11,6 @@ import Foundation
 protocol RouterDelegate {
     
     func presentSecondScreen(withProducts products: [Product])
+    
+    func presentThirdScreen()
 }
