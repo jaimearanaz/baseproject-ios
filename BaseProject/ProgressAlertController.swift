@@ -41,7 +41,8 @@ class ProgressAlertController: UIAlertController {
     fileprivate func addContentViewController() {
         
         contentViewController = UIViewController.init()
-        contentViewController!.view.addHeightConstraint(10)
+        addConstraintisToContentView()
+        
         setValue(contentViewController, forKey: "contentViewController")
     }
     
@@ -57,59 +58,33 @@ class ProgressAlertController: UIAlertController {
         addConstraintsToProgressView()
     }
     
+    fileprivate func addConstraintisToContentView() {
+        
+        contentViewController?.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[view(10)]",
+                                                                                  options: [],
+                                                                                  metrics: nil,
+                                                                                  views: ["view": contentViewController!.view]))
+    }
+    
     fileprivate func addConstraintsToProgressView() {
         
-        let height: CGFloat = 2
-        let heightConstraint = NSLayoutConstraint(
-            item: progressView!,
-            attribute: NSLayoutAttribute.height,
-            relatedBy: NSLayoutRelation.equal,
-            toItem: nil,
-            attribute: NSLayoutAttribute.notAnAttribute,
-            multiplier: 1,
-            constant: height)
-        progressView!.addConstraint(heightConstraint)
+        guard (progressView!.superview != nil) else {
+            return
+        }
         
-        let verticalCenterConstraint = NSLayoutConstraint(
-            item: progressView!,
-            attribute: NSLayoutAttribute.centerY,
-            relatedBy: NSLayoutRelation.equal,
-            toItem: progressView!.superview,
-            attribute: NSLayoutAttribute.centerY,
-            multiplier: 1,
-            constant: 0)
-        progressView!.superview!.addConstraint(verticalCenterConstraint)
+        let superview = progressView!.superview!
+
+        superview.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-10-[progressView]-10-|",
+                                       options: [],
+                                       metrics: nil,
+                                       views: ["progressView": progressView!]))
         
-        let horizontalCenterConstraint = NSLayoutConstraint(
-            item: progressView!,
-            attribute: NSLayoutAttribute.centerX,
-            relatedBy: NSLayoutRelation.equal,
-            toItem: progressView!.superview,
-            attribute: NSLayoutAttribute.centerX,
-            multiplier: 1,
-            constant: 0)
-        progressView!.superview!.addConstraint(horizontalCenterConstraint)
+        superview.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[progressView(2)]",
+                                                         options: [],
+                                                         metrics: nil,
+                                                         views: ["progressView": progressView!]))
         
-        let leading: CGFloat = -10
-        let leadingConstraint = NSLayoutConstraint(
-            item: progressView!.superview!,
-            attribute: NSLayoutAttribute.leading,
-            relatedBy: NSLayoutRelation.equal,
-            toItem: progressView!,
-            attribute: NSLayoutAttribute.leading,
-            multiplier: 1,
-            constant: leading)
-        progressView!.superview!.addConstraint(leadingConstraint)
-        
-        let trailing: CGFloat = 10
-        let trailingConstraint = NSLayoutConstraint(
-            item: progressView!.superview!,
-            attribute: NSLayoutAttribute.trailing,
-            relatedBy: NSLayoutRelation.equal,
-            toItem: progressView!,
-            attribute: NSLayoutAttribute.trailing,
-            multiplier: 1,
-            constant: trailing)
-        progressView!.superview!.addConstraint(trailingConstraint)
+        progressView!.centerXAnchor.constraint(equalTo: superview.centerXAnchor).isActive = true
+        progressView!.centerYAnchor.constraint(equalTo: superview.centerYAnchor).isActive = true
     }
 }
