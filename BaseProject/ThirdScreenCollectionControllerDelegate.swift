@@ -10,5 +10,5 @@ import Foundation
 
 protocol ThirdScreenCollectionControllerDelegate {
     
-    
+    func didSelectItem(atIndexPath indexPath: IndexPath)
 }
