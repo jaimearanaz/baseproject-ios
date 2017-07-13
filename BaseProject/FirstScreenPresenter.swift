@@ -73,8 +73,8 @@ class FirstScreenPresenter: FirstScreenPresenterDelegate {
  
         let images = urls(fromProducts: products)
         
-        ImageDownloader.downloadAndCacheImages(images) { (_, _) in
-         
+        ImageDownloader.downloadAndCacheImages(images) { (error) in
+            
             self.controllerDelegate?.stopLoadingState()
             self.router?.presentSecondScreen(withProducts: products)
         }
