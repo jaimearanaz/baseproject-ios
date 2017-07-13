@@ -34,6 +34,9 @@
 		6F515B5E1E7043DA0062B141 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F515B5D1E7043DA0062B141 /* Network.swift */; };
 		6F515B611E7056BA0062B141 /* DefaultsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F515B601E7056BA0062B141 /* DefaultsDelegate.swift */; };
 		6F515B631E7056CD0062B141 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F515B621E7056CD0062B141 /* Defaults.swift */; };
+		6F5737791F178BE10015313F /* UIViewSubclass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5737781F178BE10015313F /* UIViewSubclass.swift */; };
+		6F57377A1F178BE10015313F /* UIViewSubclass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5737781F178BE10015313F /* UIViewSubclass.swift */; };
+		6F57377B1F178BE10015313F /* UIViewSubclass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5737781F178BE10015313F /* UIViewSubclass.swift */; };
 		6F5E68481E76FAB600C3782A /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5E68471E76FAB600C3782A /* UIView+Constraints.swift */; };
 		6F6B03D01E716C5D0049662C /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6B03CF1E716C5D0049662C /* Cache.swift */; };
 		6F774F6A1EBC8CB70007F57A /* ActivityAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F774F691EBC8CB70007F57A /* ActivityAlertController.swift */; };
@@ -152,6 +155,7 @@
 		6F515B601E7056BA0062B141 /* DefaultsDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultsDelegate.swift; sourceTree = "<group>"; };
 		6F515B621E7056CD0062B141 /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		6F515B641E705D570062B141 /* BaseProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaseProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		6F5737781F178BE10015313F /* UIViewSubclass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewSubclass.swift; sourceTree = "<group>"; };
 		6F5E68471E76FAB600C3782A /* UIView+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 		6F6B03CF1E716C5D0049662C /* Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		6F774F691EBC8CB70007F57A /* ActivityAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityAlertController.swift; sourceTree = "<group>"; };
@@ -446,6 +450,7 @@
 				6F9591671E7811C800BC9CCE /* UIViewLoadableFromNib.swift */,
 				6FC9627F1EB63271001D41A6 /* ProgressAlertController.swift */,
 				6F774F691EBC8CB70007F57A /* ActivityAlertController.swift */,
+				6F5737781F178BE10015313F /* UIViewSubclass.swift */,
 			);
 			name = subclasses;
 			sourceTree = "<group>";
@@ -817,6 +822,7 @@
 				6F8945391E7849E500C58E99 /* iOSVersion.swift in Sources */,
 				6F89452C1E783A7100C58E99 /* UIDevice+Inches.swift in Sources */,
 				6F95916E1E782D3900BC9CCE /* CustomViewDelegate.swift in Sources */,
+				6F5737791F178BE10015313F /* UIViewSubclass.swift in Sources */,
 				6F6B03D01E716C5D0049662C /* Cache.swift in Sources */,
 				6FC962801EB63271001D41A6 /* ProgressAlertController.swift in Sources */,
 				6F8A3B931E6F2F4C0068BA02 /* WebServicesDelegate.swift in Sources */,
@@ -843,6 +849,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F57377A1F178BE10015313F /* UIViewSubclass.swift in Sources */,
 				6FDDD5E41EC0AF52000A2A6D /* ThirdScreenViewController.swift in Sources */,
 				6FC962811EB63271001D41A6 /* ProgressAlertController.swift in Sources */,
 				6FDDD6001EC0BD12000A2A6D /* ThirdScreenCollectionViewCell.swift in Sources */,
@@ -860,6 +867,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F57377B1F178BE10015313F /* UIViewSubclass.swift in Sources */,
 				6FDDD5E51EC0AF52000A2A6D /* ThirdScreenViewController.swift in Sources */,
 				6FC962821EB63271001D41A6 /* ProgressAlertController.swift in Sources */,
 				6FDDD6011EC0BD12000A2A6D /* ThirdScreenCollectionViewCell.swift in Sources */,
