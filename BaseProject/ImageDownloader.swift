@@ -16,7 +16,7 @@ import SDWebImage
     func didFinish(completed: UInt, skipped: UInt)
 }
 
-class ImageDownloader {
+@objc class ImageDownloader: NSObject {
 
     // MARK: - Public methods
     
