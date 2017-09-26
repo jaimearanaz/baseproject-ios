@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 extension UIDevice {
-
+    
     static fileprivate var iPhone3dot5InchesHeight: CGFloat {
         get {
             return 480
@@ -35,6 +35,12 @@ extension UIDevice {
         }
     }
     
+    static fileprivate var iPhone5dot65InchesHeight: CGFloat {
+        get {
+            return 812
+        }
+    }
+    
     // MARK: - Public methods
     
     static func isiPhone3dot5Inches() -> Bool {
@@ -56,4 +62,10 @@ extension UIDevice {
         
         return (UIScreen.main.bounds.size.height == iPhone5dot5InchesHeight)
     }
+    
+    static func iPhone5dot65Inches() -> Bool {
+        
+        return (UIScreen.main.bounds.size.height == iPhone5dot65InchesHeight)
+    }
 }
+
